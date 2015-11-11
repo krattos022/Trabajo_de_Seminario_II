@@ -1,0 +1,29 @@
+\doublespacing
+\thispagestyle{empty}
+
+\begin{center}
+UNIVERSIDAD DE EL SALVADOR \\ FACULTAD MULTIDISCIPLINARIA DE OCCIDENTE \\ DEPARTAMENTO DE MATEMÁTICAS \\
+LICENCIATURA EN ESTADÍSTICA\\
+\bigskip
+\includegraphics [width=5cm,height=6cm]{Minerva}
+\bigskip
+\\ ANALISIS DE LA EFICIENCIA ENERGETICA EN LA UNIVERSIDAD DE EL SALVADOR FACULTAD MULTIDISCIPLINARIA DE OCCIDENTE \\
+\bigskip
+\textbf{MATERIA:}\\ 
+SEMINARIO II\\
+\textbf{ALUMNO:}\\ 
+FERNANDO ERNESTO MANZANARES MORÁN\\
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+\textbf{SANTA ANA,    DICIEMBRE 2015,   EL SALVADOR}\\
+\textbf{CENTRO AMÉRICA}\\
+
+
+\end{center}
+
+

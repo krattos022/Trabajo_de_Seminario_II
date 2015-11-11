@@ -1,0 +1,35 @@
+\documentclass[12pt,letterpaper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=3cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\author{Fernando Manzanares}
+\title{Diseños de Experimentos en R}
+\usepackage{setspace}
+\setlength{\parskip}{8mm}
+\usepackage{ragged2e}
+\justifying
+\usepackage{longtable}
+\usepackage{titlesec} 
+\usepackage{xcolor}
+\titleformat{\chapter}[block]{\bfseries\Huge}{\Huge\thechapter.}{1em}{}
+
+
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\SweaveInput{Portada.Rnw}
+\SweaveInput{Indice.Rnw}
+\SweaveInput{Abstract.Rnw}
+\SweaveInput{Introduccion.Rnw}
+
+\end{document}
+
+
+
+
+
