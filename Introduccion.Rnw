@@ -1,13 +1,14 @@
 \chapter*{Introducción}
-\spacing{1.5}
+\addcontentsline{toc}{chapter}{Introducción}
+
 En la actualidad el medio ambiente es uno de los factores más tomados en cuenta con respecto
 a la eficiente utilización de los recursos que éste entrega, además de la utilización de técnicas
 estadísticas que aporten información para la correcta interpretación de la eficiencia con la que
 dichos recursos son utilizados, estas son unas de las razones por la que investigaciones como esta
 son necesarios para alcanzar la contribución efectiva en la protección del ambiente, en
-términos generales, esta investigacion tiene como objetivo la provisión de productos o servicios
-en condiciones de diseño favorable en cuanto analsis estadistico, sustentabilidad
-ambiental, rentabilidad económica y social, para alcanzar la eficiencia energética,
+términos generales, esta investigacion tiene como objetivo la provisión de 
+un diseño favorable en cuanto analsis estadistico, sustentabilidad
+ambiental, para alcanzar la eficiencia energética,
 normalmente, los aspectos energéticos en cuanto a eficiencia están asociados a la especificación de
 las potencias o capacidades de los equipos utilizados en la localización física y geográfica
 donde se se encuentran ubicados, y su objetivo principal es alcanzar la utilización máxima de la

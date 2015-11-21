@@ -1,4 +1,4 @@
-\doublespacing
+
 \thispagestyle{empty}
 
 \begin{center}

@@ -5,28 +5,42 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage[left=3cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage[left=3cm,right=2.5cm,top=3cm,bottom=2cm]{geometry}
 \author{Fernando Manzanares}
-\title{Diseños de Experimentos en R}
-\usepackage{setspace}
-\setlength{\parskip}{8mm}
+\title{Seminario II}
+\setlength{\parskip}{4mm}
 \usepackage{ragged2e}
 \justifying
 \usepackage{longtable}
+\usepackage{Sweave}
+\setlength\parindent{0pt}
+\usepackage{setspace}
 \usepackage{titlesec} 
 \usepackage{xcolor}
-\titleformat{\chapter}[block]{\bfseries\Huge}{\Huge\thechapter.}{1em}{}
+\titleformat{\chapter}[display]{\bfseries\Huge}{Capítulo \ \Huge\thechapter.}{0.5em}{}
+\titlespacing{\chapter}{0pt}{0ex}{1pc}
+%\titleformat{\section}[display]{\bfseries\Huge}{\Huge\thechapter.}{0.5em}{}
+%\titlespacing{\section}{0pt}{0ex}{1pc}
+\usepackage{upgreek}
+\widowpenalty=10000  
+\clubpenalty=10000
+\usepackage{multirow}
+\setcounter{secnumdepth}{3} 
+\setcounter{tocdepth}{4} 
 
 
 
 \begin{document}
 \SweaveOpts{concordance=TRUE}
-
+\spacing{1.5}
 \SweaveInput{Portada.Rnw}
+\spacing{1.0}
 \SweaveInput{Indice.Rnw}
+\spacing{1.5}
 \SweaveInput{Abstract.Rnw}
 \SweaveInput{Introduccion.Rnw}
-
+\SweaveInput{PdelPro.Rnw}
+\SweaveInput{AbordajeT.Rnw}
 \end{document}
 
 

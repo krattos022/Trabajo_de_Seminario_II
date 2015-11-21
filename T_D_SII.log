@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.9)  11 NOV 2015 00:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.9)  20 NOV 2015 23:13
 entering extended mode
 **T_D_SII.tex
 (C:\Users\Fernando\Documents\Trabajo_de_Seminario_II\T_D_SII.tex
@@ -401,9 +401,6 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks23
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
-Package: setspace 2011/12/19 v6.7a set line spacing
-)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
 
@@ -443,38 +440,6 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count111
 \LT@p@ftn=\toks24
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
-Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
-\ttl@box=\box32
-\beforetitleunit=\skip64
-\aftertitleunit=\skip65
-\ttl@plus=\dimen124
-\ttl@minus=\dimen125
-\ttl@toksa=\toks25
-\titlewidth=\dimen126
-\titlewidthlast=\dimen127
-\titlewidthfirst=\dimen128
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
-Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
-Package xcolor Info: Model `RGB' extended on input line 1353.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\block.tss"
-File: block.tss 2011/12/15
-)
 (C:/PROGRA~1/R/R-32~1.2/share/texmf/tex/latex\Sweave.sty
 Package: Sweave 
 
@@ -488,7 +453,7 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 <2008/02/07> (tvz)
 \FV@CodeLineNo=\count112
 \FV@InFile=\read1
-\FV@TabBox=\box33
+\FV@TabBox=\box32
 \c@FancyVerbLine=\count113
 \FV@StepNumber=\count114
 \FV@OutFile=\write3
@@ -669,37 +634,79 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aer.fd"
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 ))))
+("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box33
+\beforetitleunit=\skip64
+\aftertitleunit=\skip65
+\ttl@plus=\dimen124
+\ttl@minus=\dimen125
+\ttl@toksa=\toks25
+\titlewidth=\dimen126
+\titlewidthlast=\dimen127
+\titlewidthfirst=\dimen128
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\was\upgreek.sty"
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen129
+)
 (C:\Users\Fernando\Documents\Trabajo_de_Seminario_II\T_D_SII.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 33.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    ... okay on input line 33.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count115
-\scratchdimen=\dimen129
+\scratchdimen=\dimen130
 \scratchbox=\box34
 \nofMPsegments=\count116
 \nofMParguments=\count117
 \everyMPshowfont=\toks26
 \MPscratchCnt=\count118
-\MPscratchDim=\dimen130
+\MPscratchDim=\dimen131
 \MPnumerator=\count119
 \makeMPintoPDFobject=\count120
 \everyMPtoPDFconversion=\toks27
@@ -713,14 +720,14 @@ LaTeX Font Info:    ... okay on input line 23.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(85.35826pt, 457.80486pt, 71.13188pt)
-* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
+* v-part:(T,H,B)=(85.35826pt, 652.70622pt, 56.9055pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=457.80486pt
 * \textheight=652.70622pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
-* \topmargin=-38.1381pt
+* \topmargin=-23.91173pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -739,45 +746,64 @@ LaTeX Font Info:    ... okay on input line 23.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 23.
+LaTeX Info: Redefining \selectfont on input line 33.
 
 (C:\Users\Fernando\Documents\Trabajo_de_Seminario_II\T_D_SII-concordance.tex)
-<Minerva.png, id=7, 286.1892pt x 367.6134pt>
+<Minerva.png, id=11, 286.1892pt x 367.6134pt>
 File: Minerva.png Graphic file (type png)
  <use Minerva.png>
-Package pdftex.def Info: Minerva.png used on input line 33.
+Package pdftex.def Info: Minerva.png used on input line 43.
 (pdftex.def)             Requested size: 142.26016pt x 170.71408pt.
  [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Fernando/Documen
 ts/Trabajo_de_Seminario_II/Minerva.png>]
-(C:\Users\Fernando\Documents\Trabajo_de_Seminario_II\T_D_SII.toc)
+(C:\Users\Fernando\Documents\Trabajo_de_Seminario_II\T_D_SII.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write4
  [2
 
 ] [1
 
+] [2
+
 ]
-[2
+Cap\'{\i }tulo 1.
+[3
+
+] [4] [5]
+Cap\'{\i }tulo 2.
+[6
 
 ] (C:\Users\Fernando\Documents\Trabajo_de_Seminario_II\T_D_SII.aux) )
-(\end occurred inside a group at level 1)
+(\end occurred inside a group at level 3)
 
-### semi simple group (level 1) entered at line 61 (\begingroup)
+### semi simple group (level 3) entered at line 69 (\begingroup)
+### semi simple group (level 2) entered at line 65 (\begingroup)
+### semi simple group (level 1) entered at line 35 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5465 strings out of 493921
- 70192 string characters out of 3147273
- 136215 words of memory out of 3000000
- 8652 multiletter control sequences out of 15000+200000
- 13759 words of font info for 33 fonts, out of 3000000 for 9000
+ 5599 strings out of 493921
+ 71852 string characters out of 3147273
+ 139394 words of memory out of 3000000
+ 8751 multiletter control sequences out of 15000+200000
+ 27631 words of font info for 65 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 35i,5n,35p,285b,218s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,5n,35p,1487b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
 x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on T_D_SII.pdf (4 pages, 312108 bytes).
+Output written on T_D_SII.pdf (8 pages, 323504 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
+ 50 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 30 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

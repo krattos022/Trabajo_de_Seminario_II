@@ -1,0 +1,4 @@
+\chapter{Fundamentación teórica}
+\section{Antecedentes}
+\section{Teorías acerca de la eficiencia enérgetica}
+\section{Teorías estadísticas}

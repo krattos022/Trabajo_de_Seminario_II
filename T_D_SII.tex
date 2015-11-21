@@ -5,25 +5,35 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage[left=3cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage[left=3cm,right=2.5cm,top=3cm,bottom=2cm]{geometry}
 \author{Fernando Manzanares}
-\title{Diseños de Experimentos en R}
-\usepackage{setspace}
-\setlength{\parskip}{8mm}
+\title{Seminario II}
+\setlength{\parskip}{4mm}
 \usepackage{ragged2e}
 \justifying
 \usepackage{longtable}
+\usepackage{Sweave}
+\setlength\parindent{0pt}
+\usepackage{setspace}
 \usepackage{titlesec} 
 \usepackage{xcolor}
-\titleformat{\chapter}[block]{\bfseries\Huge}{\Huge\thechapter.}{1em}{}
+\titleformat{\chapter}[display]{\bfseries\Huge}{Capítulo \ \Huge\thechapter.}{0.5em}{}
+\titlespacing{\chapter}{0pt}{0ex}{1pc}
+%\titleformat{\section}[display]{\bfseries\Huge}{\Huge\thechapter.}{0.5em}{}
+%\titlespacing{\section}{0pt}{0ex}{1pc}
+\usepackage{upgreek}
+\widowpenalty=10000  
+\clubpenalty=10000
+\usepackage{multirow}
+\setcounter{secnumdepth}{3} 
+\setcounter{tocdepth}{4} 
 
 
 
-\usepackage{Sweave}
 \begin{document}
 \input{T_D_SII-concordance}
+\spacing{1.5}
 
-\doublespacing
 \thispagestyle{empty}
 
 \begin{center}
@@ -52,21 +62,26 @@ FERNANDO ERNESTO MANZANARES MORÁN\\
 \end{center}
 
 
+\spacing{1.0}
+
 \tableofcontents 
+\thispagestyle{empty}
+\spacing{1.5}
 \chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
 \pagenumbering{arabic}
 Erase una vez...
-\vspace{-2cm}
 \chapter*{Introducción}
-\spacing{1.5}
+\addcontentsline{toc}{chapter}{Introducción}
+
 En la actualidad el medio ambiente es uno de los factores más tomados en cuenta con respecto
 a la eficiente utilización de los recursos que éste entrega, además de la utilización de técnicas
 estadísticas que aporten información para la correcta interpretación de la eficiencia con la que
 dichos recursos son utilizados, estas son unas de las razones por la que investigaciones como esta
 son necesarios para alcanzar la contribución efectiva en la protección del ambiente, en
-términos generales, esta investigacion tiene como objetivo la provisión de productos o servicios
-en condiciones de diseño favorable en cuanto analsis estadistico, sustentabilidad
-ambiental, rentabilidad económica y social, para alcanzar la eficiencia energética,
+términos generales, esta investigacion tiene como objetivo la provisión de 
+un diseño favorable en cuanto analsis estadistico, sustentabilidad
+ambiental, para alcanzar la eficiencia energética,
 normalmente, los aspectos energéticos en cuanto a eficiencia están asociados a la especificación de
 las potencias o capacidades de los equipos utilizados en la localización física y geográfica
 donde se se encuentran ubicados, y su objetivo principal es alcanzar la utilización máxima de la
@@ -77,7 +92,31 @@ fin de crear conciencia ambiental en las personas en general, en la UES FMOcc y 
 contribución al ambiente a través del ahorro de energía, además de sentar un precedente para
 el análisis de datos, que se realizara a través de una serie de tiempo con el objetivo de alcanzar
 el preciso análisis de los datos y así tomar la decisiones que generen mayor impacto ambiental.
+\chapter{El Problema}
+\section{Planteamiento del problema}
+Desde hace ya varios años, la protección al medio ambiente se ha ido convirtiendo en un tema de mucha importancia,
+tanto así, que varios países del mundo han comenzado a adoptar políticas para la conservación de este, dichas politicas van desde, el tratamiento desechos solidos hasta el ahorro de energía y cada día que pasa se adoptan muchas mas; entonces la NO protección del ambiente esta generando dichas reacciones en las poblaciones de todos los países alrededor del mundo, ya que en la actualidad se viven problemas como la contaminación y escasez de agua, contaminación del aire, degradación de los suelos y descenso de la productividad agrícola, deforestación, residuos sólidos y peligrosos, pérdida de la diversidad biológica, desgaste de la capa de ozono y cambios climáticos,todos estos problemas afectan a los países, de manera desigual, según el grado de su desarrollo, de su estructura económica y de las políticas ambientales que aplican, es decir para combatir el deterioro ambiental se llevan a cabo dos tipos de políticas; las que procuran relacionar el desarrollo con el medio ambiente a nivel general de población, recursos, legislación y tecnologías, y las que se orientan a problemas específicos, uno de los factores mas importantes al interior de estas problemáticas es el ahorro de energía, este factor entra en el segundo tipo de política anteriormente mencionada, es por eso que paises desarrollados están comenzando a implementar medidas que buscan dicho ahorro y ademas buscan consumir energía pero de manera eficiente.
 
+En El Salvador, el problema de la eficiencia enérgetica no ha sido abordado desde el punto de vista estadistico, es decir, la aplicación de tecnicas estadisticas para investigar dicho problema,
+normalmente, los aspectos energéticos en cuanto a eficiencia están asociados a la especificación de
+las potencias o capacidades de los equipos utilizados en la localización física y geográfica
+donde se se encuentran ubicados, y su objetivo principal es alcanzar la utilización máxima de la
+capacidad de los aparatos eléctricos con el menor consumo de energía posible, por esa razon esta investigación busca la implementación de una serie temporal para el analisis de los datos del consumo electrico mensual en la Universidad de El Salvador Facultad Multidisciplinaria de Occidente (UES FMOcc), además, desarrollar proyeciones apartir de dicho modelo para analizar e interpretar el comportamiento del consumo eléctrico y sentar un presedente a nivel academico y teórico sobre el abordaje que se le pueden dar a este tipo de problemas, a estose agrega, contribuir en la protección del ambiente y generar conciencia para cambiar los habitos del consumo electrico, en la misma linea tambien pretende responder a las siguientes preguntas ¿Será eficiente el consumo eléctrico en la UES FMOcc? ¿Es posible alcanzar la eficiencia enérgetica en los edificios de la UES FMOcc? ¿Está el consumo energetico en la UES FMOcc creciendo atravez del tiempo? ¿Cuánta energía podria ahorrase si se lograra la eficiencia?
+
+\newpage
+\section{Justificación}
+
+\section{Objetivos de la investigación}
+
+\subsection{Objetivo general}
+\subsection{Objetivos específicos}
+
+\section{Hipótesis}
+
+\chapter{Fundamentación teórica}
+\section{Antecedentes}
+\section{Teorías acerca de la eficiencia enérgetica}
+\section{Teorías estadísticas}
 \end{document}
 
 
