@@ -1,0 +1,61 @@
+% This file was created with JabRef 2.11.1.
+% Encoding: Cp1252
+
+
+@Book{Christensen,
+  Title                    = {Advanced Linear Modeling},
+  Author                   = {Christensen, Ronald},
+  Year                     = {2000}
+}
+
+@Book{Commandeur,
+  Title                    = {State Space Time Series Analysis},
+  Author                   = {Commandeur, Jacques J.F.; Koopman, Siem Jan},
+  Editor                   = {OXFORD},
+  Year                     = {2007}
+}
+
+@Book{Hanke,
+  Title                    = {Pronosticos en los negocios},
+  Author                   = {Hanke, Jhon E.},
+  Editor                   = {Pearson},
+  Year                     = {2010}
+}
+
+@Article{Ramon,
+  Title                    = {REVISIÓN DE LOS PROCEDIMIENTOS DE ANÁLISIS DE LA ESTACIONARIEDAD DE LAS SERIES TEMPORALES},
+  Author                   = {Mahía, Ramon},
+  Year                     = {1999}
+}
+
+@Book{Nguyen,
+  Title                    = {A Course in Stochastic Processes Stochastic Models and Statistical Inference},
+  Author                   = {Nguyen , Hung  T.},
+  Year                     = {1996}
+}
+
+@MastersThesis{Isaac,
+  Title                    = {Análisis de Series Temporales utilizando Modelos Arima y su Aplicación en
+la Predicción de Indicadores del Ministerio de Salud en el Departamento de
+Santa Ana},
+  Author                   = {Peña Mejía, Jaime Isaac},
+  School                   = {Universidad de El Salvador}
+}
+
+@Book{Daniel,
+  Title                    = {A Course in Time Series Analysis},
+  Author                   = {Peña, Daniel; Tiao, George C.; Tsay, Ruey S.},
+  Year                     = {2001}
+}
+
+@Book{Shumway,
+  Title                    = {Time Series Analysis and Its Applications With R Examples},
+  Author                   = {Shumway, Robert H.; Stoffer, David S.}
+}
+
+@Book{Tsay,
+  Title                    = {Analysis of Financial Time Series},
+  Author                   = {Tsay, Ruey S.},
+  Year                     = {2010}
+}
+

@@ -13,25 +13,26 @@
 \justifying
 \usepackage{longtable}
 \usepackage{Sweave}
-\setlength\parindent{0pt}
+\setlength\parindent{1.25cm}
 \usepackage{setspace}
 \usepackage{titlesec} 
 \usepackage{xcolor}
 \titleformat{\chapter}[display]{\bfseries\Huge}{Capítulo \ \Huge\thechapter.}{0.5em}{}
 \titlespacing{\chapter}{0pt}{0ex}{1pc}
-%\titleformat{\section}[display]{\bfseries\Huge}{\Huge\thechapter.}{0.5em}{}
-%\titlespacing{\section}{0pt}{0ex}{1pc}
 \usepackage{upgreek}
 \widowpenalty=10000  
 \clubpenalty=10000
 \usepackage{multirow}
 \setcounter{secnumdepth}{3} 
 \setcounter{tocdepth}{4} 
-
-
+\usepackage{fancyhdr}
+\renewcommand{\labelitemi}{•}
+\usepackage{apalike}
+\usepackage{cite}
 
 \begin{document}
 \input{T_D_SII-concordance}
+
 \spacing{1.5}
 
 \thispagestyle{empty}
@@ -101,22 +102,69 @@ En El Salvador, el problema de la eficiencia enérgetica no ha sido abordado des
 normalmente, los aspectos energéticos en cuanto a eficiencia están asociados a la especificación de
 las potencias o capacidades de los equipos utilizados en la localización física y geográfica
 donde se se encuentran ubicados, y su objetivo principal es alcanzar la utilización máxima de la
-capacidad de los aparatos eléctricos con el menor consumo de energía posible, por esa razon esta investigación busca la implementación de una serie temporal para el analisis de los datos del consumo electrico mensual en la Universidad de El Salvador Facultad Multidisciplinaria de Occidente (UES FMOcc), además, desarrollar proyeciones apartir de dicho modelo para analizar e interpretar el comportamiento del consumo eléctrico y sentar un presedente a nivel academico y teórico sobre el abordaje que se le pueden dar a este tipo de problemas, a estose agrega, contribuir en la protección del ambiente y generar conciencia para cambiar los habitos del consumo electrico, en la misma linea tambien pretende responder a las siguientes preguntas ¿Será eficiente el consumo eléctrico en la UES FMOcc? ¿Es posible alcanzar la eficiencia enérgetica en los edificios de la UES FMOcc? ¿Está el consumo energetico en la UES FMOcc creciendo atravez del tiempo? ¿Cuánta energía podria ahorrase si se lograra la eficiencia?
+capacidad de los aparatos eléctricos con el menor consumo de energía posible, por esa razon esta investigación busca la implementación de una serie temporal para el analisis de los datos del consumo electrico mensual en la Universidad de El Salvador Facultad Multidisciplinaria de Occidente (UES FMOcc), además, desarrollar proyeciones apartir de dicho modelo para analizar e interpretar el comportamiento del consumo eléctrico y sentar un presedente a nivel academico y teórico sobre el abordaje que se le pueden dar a este tipo de problemas, a estose agrega, contribuir en la protección del ambiente y generar conciencia para cambiar los habitos del consumo electrico, en la misma linea tambien pretende responder a las siguientes preguntas ¿Será eficiente el consumo eléctrico en la UES FMOcc? ¿Es posible alcanzar la eficiencia enérgetica en los edificios de la UES FMOcc? ¿Está el consumo energetico en la UES FMOcc creciendo a través del tiempo? ¿Cuáles son los periodos de tiempo donde se consume mas energia eléctrica? ¿Cuánta energía podria ahorrase si se lograra la eficiencia enérgetica?
 
 \newpage
 \section{Justificación}
+Esta investigación pretende analizar y desarrollar proyeciones sobre los datos del consumo electrico en la UES FMOcc, para descubrir si existe o no eficiencia energetica además de la aplicación de un modelo estadistico autoregresivo integrado de media movil para datos estacionales y de esta manera poder interpretar los datos del consumo energetico de manera nueva y mas precisa, la importancia de realizar esta investigación se basa principlamente en el aporte teórico nuevo que sentara una base para el desarrollo de futuras investigaciones de esta índole, además de la aplicacion de tecnicas propiamente estadisticas para el monitoreo del comportamiento del consumo enérgetico en la UES FMOcc, esto con el fin de identificar los espacios de de tiempo donde se consume la mayor cantidad de energía eléctrica y de esta manera poder abordar de manera efectiva la problemática de eficiencia enérgetica, a esto se agrega que esta investigación tracenderá en el tiempo y será util durante los proximos 18 meses apartir de agosto de 2015 debido al tipo de tecnica utilizada para desarrollar las proyeciones y por último la contribución a la protección del ambiente una vez alcanzada la eficiencia en los sistemas electricos de la UES FMOcc, en el aspecto económico la realización de esta investigación resultaria favorable ya que la eficiencia enérgetica ademas de contribuir al ambiente sugiere una reducción en los costos del consumo enérgetico. 
 
+
+\newpage
 \section{Objetivos de la investigación}
-
 \subsection{Objetivo general}
+
+\begin{itemize}
+\item Analizar los datos del consumo eléctrico a través de la utilización de una serie
+temporal lineal o no lineal, para la interpretación de el comportamiento del consumo enérgetico a través del tiempo y si existe eficiencia energética de la UES FMOcc en los próximos 18 meses.
+\end{itemize}
+
 \subsection{Objetivos específicos}
 
+\begin{itemize}
+\item Desarrollar y analizar las proyecciones de los datos del consumo eléctrico de la
+FMOcc a través de modelos estadísticos de series temporales para los próximos 18
+meses.
+
+\item Identificar el periodo de tiempo donde el consumo energetico es mas bajo y analogamente donde es mas alto.
+
+\item Conecer la cantidad de energia y costos que podrian reducirse para contribuir al ambiente si se lograra la eficiencia energetica.  
+
+\end{itemize}
+
+\newpage
 \section{Hipótesis}
+\textbf{ Hipotesis 1.} 
+
+$H_0$ No existe eficiencia energetica en los edificios de la Universidad de El Salvador Facultad Multidisciplinaria de Occidente.
+
+$H_1$ Existe eficiencia energetica en los edificios de la Universidad de El Salvador Facultad Multidisciplinaria de Occidente.
+
+\textbf{ Hipotesis 2.}
+
+$H_0$ El consumo energetico en la Universidad de El Salvador Facultad Multidisciplinaria de Occidente es creciente a través del tiempo.
+
+$H_1$ El consumo energetico en la Universidad de El Salvador Facultad Multidisciplinaria de Occidente no es creciente a través del tiempo.
+
+
+\textbf{ Hipotesis 3.}
+
+$H_0$ Los periodos donde más energia electrica se consume son durante los ciclos academicos desarrollados en la Universidad de El Salvador Facultad Multidisciplinaria de Occidente. 
+
+$H_1$ Los periodos donde más energia electrica se consume no son durante los ciclos academicos desarrollados en la Universidad de El Salvador Facultad Multidisciplinaria de Occidente.
+
+
+
+
 
 \chapter{Fundamentación teórica}
 \section{Antecedentes}
 \section{Teorías acerca de la eficiencia enérgetica}
 \section{Teorías estadísticas}
+
+\nocite{*}
+\bibliographystyle{apalike}
+\bibliography{SIIB}
+
 \end{document}
 
 

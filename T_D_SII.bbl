@@ -1,0 +1,44 @@
+\begin{thebibliography}{}
+
+\bibitem[Christensen, 2000]{Christensen}
+Christensen, R. (2000).
+\newblock {\em Advanced Linear Modeling}.
+
+\bibitem[Commandeur, 2007]{Commandeur}
+Commandeur, Jacques J.F.;~Koopman, S.~J. (2007).
+\newblock {\em State Space Time Series Analysis}.
+
+\bibitem[Hanke, 2010]{Hanke}
+Hanke, J.~E. (2010).
+\newblock {\em Pronosticos en los negocios}.
+
+\bibitem[Mahía, 1999]{Ramon}
+Mahía, R. (1999).
+\newblock RevisiÓn de los procedimientos de an?lisis de la estacionariedad de
+  las series temporales.
+
+\bibitem[Nguyen, 1996]{Nguyen}
+Nguyen, H.~T. (1996).
+\newblock {\em A Course in Stochastic Processes Stochastic Models and
+  Statistical Inference}.
+
+\bibitem[Peña et~al., 2001]{Daniel}
+Peña, D., Tiao, G.~C., and Tsay, R.~S. (2001).
+\newblock {\em A Course in Time Series Analysis}.
+
+\bibitem[Peña~Mejía, ]{Isaac}
+Peña~Mejía, J.~I.
+\newblock Análisis de series temporales utilizando modelos arima y su
+  aplicación en la predicción de indicadores del ministerio de salud en el
+  departamento de santa ana.
+\newblock Master's thesis, Universidad de El Salvador.
+
+\bibitem[Shumway and Stoffer, ]{Shumway}
+Shumway, R.~H. and Stoffer, D.~S.
+\newblock {\em Time Series Analysis and Its Applications With R Examples}.
+
+\bibitem[Tsay, 2010]{Tsay}
+Tsay, R.~S. (2010).
+\newblock {\em Analysis of Financial Time Series}.
+
+\end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.9)  20 NOV 2015 23:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.9)  27 NOV 2015 00:26
 entering extended mode
 **T_D_SII.tex
 (C:\Users\Fernando\Documents\Trabajo_de_Seminario_II\T_D_SII.tex
@@ -676,6 +676,25 @@ LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
 ("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 \bigstrutjot=\dimen129
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip66
+\f@ncyO@elh=\skip67
+\f@ncyO@erh=\skip68
+\f@ncyO@olh=\skip69
+\f@ncyO@orh=\skip70
+\f@ncyO@elf=\skip71
+\f@ncyO@erf=\skip72
+\f@ncyO@olf=\skip73
+\f@ncyO@orf=\skip74
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\apalike\apalike.sty"
+\bibhang=\skip75
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\cite\cite.sty"
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
 (C:\Users\Fernando\Documents\Trabajo_de_Seminario_II\T_D_SII.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
@@ -752,7 +771,7 @@ LaTeX Info: Redefining \selectfont on input line 33.
 <Minerva.png, id=11, 286.1892pt x 367.6134pt>
 File: Minerva.png Graphic file (type png)
  <use Minerva.png>
-Package pdftex.def Info: Minerva.png used on input line 43.
+Package pdftex.def Info: Minerva.png used on input line 44.
 (pdftex.def)             Requested size: 142.26016pt x 170.71408pt.
  [1
 
@@ -781,29 +800,45 @@ Cap\'{\i }tulo 1.
 [3
 
 ] [4] [5]
-Cap\'{\i }tulo 2.
-[6
+LaTeX Font Info:    Try loading font information for TS1+aer on input line 117.
 
-] (C:\Users\Fernando\Documents\Trabajo_de_Seminario_II\T_D_SII.aux) )
+ (C:/PROGRA~1/R/R-32~1.2/share/texmf/tex/latex\ts1aer.fd
+File: ts1aer.fd 
+)
+LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <12> not available
+(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 117.
+ [6]
+[7]
+Cap\'{\i }tulo 2.
+(C:\Users\Fernando\Documents\Trabajo_de_Seminario_II\T_D_SII.bbl [8
+
+]) [9
+
+]
+(C:\Users\Fernando\Documents\Trabajo_de_Seminario_II\T_D_SII.aux) )
 (\end occurred inside a group at level 3)
 
-### semi simple group (level 3) entered at line 69 (\begingroup)
-### semi simple group (level 2) entered at line 65 (\begingroup)
-### semi simple group (level 1) entered at line 35 (\begingroup)
+### semi simple group (level 3) entered at line 70 (\begingroup)
+### semi simple group (level 2) entered at line 66 (\begingroup)
+### semi simple group (level 1) entered at line 36 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5599 strings out of 493921
- 71852 string characters out of 3147273
- 139394 words of memory out of 3000000
- 8751 multiletter control sequences out of 15000+200000
- 27631 words of font info for 65 fonts, out of 3000000 for 9000
+ 5866 strings out of 493921
+ 75262 string characters out of 3147273
+ 144594 words of memory out of 3000000
+ 8997 multiletter control sequences out of 15000+200000
+ 30445 words of font info for 69 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 35i,5n,35p,1487b,367s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on T_D_SII.pdf (8 pages, 323504 bytes).
+ 35i,5n,43p,1491b,368s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Fernando\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
+nappen\ec\dpi600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on T_D_SII.pdf (11 pages, 362337 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
+ 76 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

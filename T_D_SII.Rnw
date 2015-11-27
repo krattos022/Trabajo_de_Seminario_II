@@ -13,25 +13,26 @@
 \justifying
 \usepackage{longtable}
 \usepackage{Sweave}
-\setlength\parindent{0pt}
+\setlength\parindent{1.25cm}
 \usepackage{setspace}
 \usepackage{titlesec} 
 \usepackage{xcolor}
 \titleformat{\chapter}[display]{\bfseries\Huge}{Capítulo \ \Huge\thechapter.}{0.5em}{}
 \titlespacing{\chapter}{0pt}{0ex}{1pc}
-%\titleformat{\section}[display]{\bfseries\Huge}{\Huge\thechapter.}{0.5em}{}
-%\titlespacing{\section}{0pt}{0ex}{1pc}
 \usepackage{upgreek}
 \widowpenalty=10000  
 \clubpenalty=10000
 \usepackage{multirow}
 \setcounter{secnumdepth}{3} 
 \setcounter{tocdepth}{4} 
-
-
+\usepackage{fancyhdr}
+\renewcommand{\labelitemi}{•}
+\usepackage{apalike}
+\usepackage{cite}
 
 \begin{document}
 \SweaveOpts{concordance=TRUE}
+
 \spacing{1.5}
 \SweaveInput{Portada.Rnw}
 \spacing{1.0}
@@ -41,6 +42,14 @@
 \SweaveInput{Introduccion.Rnw}
 \SweaveInput{PdelPro.Rnw}
 \SweaveInput{AbordajeT.Rnw}
+
+
+
+
+\nocite{*}
+\bibliographystyle{apalike}
+\bibliography{SIIB}
+
 \end{document}
 
 
