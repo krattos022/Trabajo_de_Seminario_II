@@ -29,6 +29,12 @@
   Year                     = {2008}
 }
 
+@Book{Daniel2001,
+  Title                    = {A Course in Time Series Analysis},
+  Author                   = {Peña Daniel and J. I.a, Daniel and Tiao, George C. and Tsay, Ruey S.},
+  Year                     = {2001}
+}
+
 @Manual{MIESA,
   Title                    = {Metodología de Eficiencia
 Energética
@@ -76,12 +82,6 @@ PIMENTEL HERNÁNDEZ, LEONEL ANTONIO},
   Title                    = {A Course in Stochastic Processes Stochastic Models and Statistical Inference},
   Author                   = {Nguyen , Hung T.},
   Year                     = {1996}
-}
-
-@Book{Daniel2001,
-  Title                    = {A Course in Time Series Analysis},
-  Author                   = {Daniel Peña and Tiao, George C. and Tsay, Ruey S.},
-  Year                     = {2001}
 }
 
 @PhdThesis{Isaac,

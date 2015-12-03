@@ -4,17 +4,43 @@
 Christensen, R. (2000).
 \newblock {\em Advanced Linear Modeling}.
 
-\bibitem[Commandeur, 2007]{Commandeur}
+\bibitem[Commandeur, 2007]{Commandeur2007}
 Commandeur, Jacques J.F.;~Koopman, S.~J. (2007).
 \newblock {\em State Space Time Series Analysis}.
+
+\bibitem[Cryer and Chan, 2008]{Cryer}
+Cryer, J.~D. and Chan, K.-S. (2008).
+\newblock {\em Time series Analysis with aplications in R}.
+\newblock Springer.
+
+\bibitem[de~Economía de la República~de El~Salvador, a]{MIESA2}
+de~Economía de la República~de El~Salvador, M.
+\newblock {\em Metodología de Eficiencia Energética en el Comercio}.
+
+\bibitem[de~Economía de la República~de El~Salvador, b]{MIESA}
+de~Economía de la República~de El~Salvador, M.
+\newblock {\em Metodología de Eficiencia Energética en la Industria}.
+
+\bibitem[GONZÁLEZ~GUEVARA et~al., 2015]{ANelson}
+GONZÁLEZ~GUEVARA, L. M.~M., MARTÍNEZ~CORDOVA, J.~L., MARTÍNEZ~MOLINA, N.~M.,
+  and PIMENTEL~HERNÁNDEZ, L.~A. (2015).
+\newblock {\em PROPUESTA DE PLAN DE AHORRO DEL CONSUMO DE ENERGÍA ELÉCTRICA
+  EN LA FACULTAD MULTIDISCIPLINARIA DE OCCIDENTE DE LA UNIVERSIDAD DE EL
+  SALVADOR}.
+\newblock PhD thesis, UNIVERSIDAD DE EL SALVADOR.
 
 \bibitem[Hanke, 2010]{Hanke}
 Hanke, J.~E. (2010).
 \newblock {\em Pronosticos en los negocios}.
 
+\bibitem[Johnson et~al., 2009]{Mexico}
+Johnson, T.~M., Alatorre, C., Romo, Z., and Liu, F. (2009).
+\newblock México: estudio sobre la disminución de emisiones de carbono.
+\newblock {\em Banco Mundial}.
+
 \bibitem[Mahía, 1999]{Ramon}
 Mahía, R. (1999).
-\newblock RevisiÓn de los procedimientos de an?lisis de la estacionariedad de
+\newblock RevisiÓn de los procedimientos de anÁlisis de la estacionariedad de
   las series temporales.
 
 \bibitem[Nguyen, 1996]{Nguyen}
@@ -22,16 +48,36 @@ Nguyen, H.~T. (1996).
 \newblock {\em A Course in Stochastic Processes Stochastic Models and
   Statistical Inference}.
 
-\bibitem[Peña et~al., 2001]{Daniel}
+\bibitem[Peña et~al., 2001]{Daniel2001}
 Peña, D., Tiao, G.~C., and Tsay, R.~S. (2001).
 \newblock {\em A Course in Time Series Analysis}.
 
-\bibitem[Peña~Mejía, ]{Isaac}
-Peña~Mejía, J.~I.
-\newblock Análisis de series temporales utilizando modelos arima y su
-  aplicación en la predicción de indicadores del ministerio de salud en el
-  departamento de santa ana.
-\newblock Master's thesis, Universidad de El Salvador.
+\bibitem[Peña, 2014]{Isaac}
+Peña, I. (2014).
+\newblock {\em Análisis de Series Temporales utilizando Modelos Arima y su
+  Aplicación en la Predicción de Indicadores del Ministerio de Salud en el
+  Departamento de Santa Ana}.
+\newblock PhD thesis, Universidad de El Salvador.
+
+\bibitem[(PTE-EE), 2009]{Spain}
+(PTE-EE), P. T. E. D. E.~E. (2009).
+\newblock Documento de visión de la eficiencia energética en españa.
+
+\bibitem[RUIZ, 2002]{Europa}
+RUIZ, C.~N. (2002).
+\newblock La prevención del cambio climático: ¿límites tecnológicos o
+  políticos?
+
+\bibitem[S.A. and ECONOLER, 2010]{S.A.}
+S.A., A.~S. and ECONOLER (2010).
+\newblock Estudio de mercado de eficiencia energética en chile.
+\newblock Technical report.
+
+\bibitem[Schuschny, 2007]{Cepal}
+Schuschny, A.~R. (2007).
+\newblock El método dea y su aplicación al estudio del sector energético y
+  las emisiones de co2 en am?rica latina y el caribe.
+\newblock CEPAL.
 
 \bibitem[Shumway and Stoffer, ]{Shumway}
 Shumway, R.~H. and Stoffer, D.~S.

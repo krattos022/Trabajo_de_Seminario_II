@@ -1,0 +1,29 @@
+\begin{enumerate}
+\item Ruido blanco: el proceso t se define como ruido blanco si cumple con
+las siguientes condiciones:
+
+  \subitem La esperanza de $Y_t$ o promedio es igual a 0 para todos los periodos
+           t. Esto es $E(Y_t) = 0$ para toda t.
+  \subitem La varianza de $Y_t$ es constante y por consiguiente independiente
+           del tiempo. Esto es $var(Y_t) = \sigma^2$.
+
+\item Independiente e idénticamente distribuido: el proceso $Y_t$ se dice
+ser Independiente e idénticamente distribuido si cumple con las siguientes condiciones:
+
+  \subitem La esperanza de $Y_t$ es constante pero no necesariamente igual a 0
+           para todos los periodos t. Esto es $E(Y_t) = \mu$.
+  \subitem La varianza de $Y_t$ es constante y por consiguiente independiente
+           del tiempo. Esto es $var(Y_t) = \sigma^2$.
+  \subitem $Y_t$ es independiente de $Y_k$ para todas las t y k con $t \not= k.$
+  
+\end{enumerate}
+
+@PhdThesis{Isaac,
+  Title                    = {Análisis de Series Temporales utilizando Modelos Arima y su Aplicación en
+la Predicción de Indicadores del Ministerio de Salud en el Departamento de
+Santa Ana},
+  Author                   = {Peña Mejía, Jaime Isaac},
+  School                   = {Universidad de El Salvador}
+  Year                     = {2014}
+}
+

@@ -10,5 +10,13 @@
 \contentsline {section}{\numberline {1.4}Hip\IeC {\'o}tesis}{7}
 \contentsline {chapter}{\numberline {2}Fundamentaci\IeC {\'o}n te\IeC {\'o}rica}{8}
 \contentsline {section}{\numberline {2.1}Antecedentes}{8}
+\contentsline {subsection}{\numberline {2.1.1}Eficiencia Energetica en Espa\IeC {\~n}a}{8}
 \contentsline {section}{\numberline {2.2}Teor\IeC {\'\i }as acerca de la eficiencia en\IeC {\'e}rgetica}{8}
 \contentsline {section}{\numberline {2.3}Teor\IeC {\'\i }as estad\IeC {\'\i }sticas}{8}
+\contentsline {subsection}{\numberline {2.3.1}Estacionariedad, Estacionalidad y transformaciones}{8}
+\contentsline {subsection}{\numberline {2.3.2}Funci\IeC {\'o}n de autocorrelacion simple (FAS o ACF)}{11}
+\contentsline {subsection}{\numberline {2.3.3}Funci\IeC {\'o}n de autocorrelacion parcial (FAP o PACF)}{12}
+\contentsline {subsection}{\numberline {2.3.4}Metodolog\IeC {\'\i }a Box-Jenkins}{14}
+\contentsline {subsection}{\numberline {2.3.5}Modelo autoregresivos integrados de media movil ARIMA(p,d,q)}{15}
+\contentsline {subsection}{\numberline {2.3.6}Proceso estacional autoregresivos integrados de media movil SARISMA(P,D,Q)}{16}
+\contentsline {subsection}{\numberline {2.3.7}Seleccion, validaci\IeC {\'o}n del modelo y elaboracion de pron\IeC {\'o}sticos}{17}
