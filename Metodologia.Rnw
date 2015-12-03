@@ -1,0 +1,35 @@
+\chapter{Metodología}
+\section{Tipo de Investigación}
+Se realiza un estudio descriptivo retrospectivo porque es un estudio longitudinal en el tiempo que se analiza en el presente, pero con datos del pasado.
+\section{Población}
+Se cuenta con una cantidad de registros del consumo energético mensuales de la UES FMOcc desde enero del 2009 hasta agosto de 2015.
+\section{Intrumentos}
+Con el propósito de obtener un modelo que se ajuste a las series de tiempo
+se utilizan softwares para determinar el mejor modelo, éstos son: Gretl, R y
+SPSS.
+
+\section{Procedimiento}
+
+Previo a la utilización de la metodología
+ARIMA se verifica que las series cumplieran con los requisitos recomendados por algunos autores: consistencia, estabilidad y no existencia de valores
+perdidos y que tuvieran un número suficiente de observaciones (más de 50
+observaciones por cada serie temporal), la existencia de autocorrelación se
+explora mediante el gráfico de las funciones de autocorrelación o correlograma y los ordenes de los términos incluidos en los diferentes modelos se correspondieron con los coeficientes de correlación simple y parcial estadísticamente
+significativos, para la selección del modelo adecuado se sigue la metodología
+Box-Jenkins que consta de las siguientes etapas :Identificación, Estimación,
+Diagnosis o chequeo y Predicciones (Pronósticos), se sigue ésta metodología
+siempre que la serie sea estacionaria en media y en varianza, para lograr la
+estacionariedad de la serie y estabilizar la media y las autocorrelaciones se
+realizan diferenciaciones, es decir reemplazar las observaciones por el valor de
+la diferencia entre esta y la observación anterior para la diferenciación regular
+(de orden 1) o reemplazarla por la diferencia entre la observación actual y la
+correspondiente al periodo estacional anterior para la diferenciación estacional. Además se efectúa, sobre todo transformación de Box-Cox a los datos
+para la estabilizacion de la varianza, la busqueda del modelo que mejor se
+ajuste a las series se efectúa tratando de que sean sencillos, explicaran bien
+las correlaciones internas del proceso y produjeran una diferencia mínima
+entre el valor observado y el esperado. Esto se realiza de manera iterativa,
+probando las combinaciones más lógicas de términos regulares AR y MA y
+de términos estacionales SAR y SMA, incluyendo las diferenciaciones necesarias. La adecuación de un modelo se estableció a partir del análisis de la
+significación estadística de los parámetros del mismo, de las características
+de los residuos o errores producidos por el modelo sobre la serie y del valor del error de predicción, se utiliza el Porcentaje de Error Medio Absoluto
+(MAPE).

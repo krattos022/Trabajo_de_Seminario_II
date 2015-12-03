@@ -1,4 +1,7 @@
 \chapter*{Abstract}
 \addcontentsline{toc}{chapter}{Abstract}
 \pagenumbering{arabic}
-Erase una vez...
+Why is conserving energy important? As you can see there are many reasons that conservation is important, ranging from the environment to the economy. The world's dependence on fossil fuels is creating a problem that will affect generations to come. It is important that energy not only be conserved, but also that research continues to find cleaner and better solutions for future generations, in this case the investigation applies a time series to help to UES FMOcc to find a good way to save electrical energy, that means make the energy consumption has to be a priority, in the same line reducing the amount of energy  that they use is a good way to save money, and there are also other benefits to decreasing energy consumption, the efficient use of energy and apply a time series is a priority in this investigation, and this investigation discover that the time series model that describe the energy consumption in UES FMOcc is a SARISMA(0,0,2)*(0,1,1) and the forecasting of this model says that the UES FMOcc has not an efficient energy consumption and have to be fixed.
+
+
+\textbf{Keywords: Forecast, Time series, energy consumption, conserved energy.}

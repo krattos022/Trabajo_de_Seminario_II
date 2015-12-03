@@ -1,12 +1,49 @@
 \chapter{Fundamentación teórica}
 \section{Antecedentes}
+
   \subsection{Eficiencia Energetica en España}
 
-    La eficiencia enérgetica 
+Las variaciones marginales del consumo de energía en España, que son
+debidas tanto a la evolución de la actividad económica como a las
+modificaciones de la intensidad energética, implican variaciones equivalentes
+en las importaciones de petróleo, es decir españa depende mucho del petroleo como fuente de energía, en la estrategia de Ahorro y Eficiencia Energética que España posee se ha previsto una mejora
+sostenida de la intensidad energética durante los próximos años. Pero lo
+realmente importante a señalar no son las cifras absolutas de mejora, sino el
+porcentaje de mejora de la eficiencia que en la práctica se puede conseguir, es decir la conciencia ambiental juega un papel fundamental para un pais como España. 
+
+ \subsection{Eficiencia Energetica en Chile}
+ 
+¿Cómo es el consumo energético en Chile?
+
+El grupo de energéticos que más se consume corresponde a los derivados del petróleo, que representa el 54\% del consumo final secundario, prácticamente la totalidad de los derivados debe ser importada o son producto de la refinación de petróleo crudo, cuya importación alcanza al 96,5\%,el segundo energético más utilizado es la electricidad, que representa el 19,2\% del consumo final; le sigue la leña con el 17,8\%, el gas natural con el 5,5\%, esto según el estudio de mercado en chile, en febrero de 2012 se dio a conocer la Estrategia Nacional de Energía 2012-2030, que se basa en 6 pilares fundamentales entre ellos el aborade de la Eficiencia energetica. 
 
 
+ \subsection{Eficiencia Energetica en México}
+ 
+ Históricamente, el sector energético de México ha dependido de los hidrocarburos para satisfacer la energía que demanda el país. Sin embargo, la producción nacional de energía primaria ha disminuido constantemente desde 2004, debido a la caída inercial que presentó la producción de petróleo, que se originó principalmente por la declinación del yacimiento de Cantarell. Por otro lado, el consumo nacional de energía se ha mantenido a la alza por varios años,
+lo anterior ha llevado a reflexionar sobre el riesgo que enfrenta la productividad del país ante una tendencia que haga vulnerable la eficiencia energética en los siguientes años, hoy en día una preocupación prioritaria de los gobiernos modernos en todo el mundo se focaliza en promover el aprovechamiento sustentable del uso de la energía y la utilización de nuevas fuentes de energía, sin menoscabar aspectos claves que propicien el crecimiento económico, la seguridad energética y la adaptación al cambio climático de cada país, dada la situación actual, el Gobierno de la República atiende la necesidad de llevar a cabo acciones para el aprovechamiento sustentable de la energía que contribuyan a la seguridad energética y económica del país, promoviendo la eficiencia energética en los diversos sectores productivos y de consumo de energía en México, a partir del reconocimiento de las áreas de oportunidad y sus fortalezas institucionales\cite{Mexico}.
+
+\subsection{Eficiencia Energetica en El Salvador}
+
+Hablar de ahorro energético es complejo, siendo la energía un elemento básico para la productividad, por lo que al buscar una solución viable y sostenible la propuesta es lograr un uso eficiente de este recurso. los programas de eficiencia energética deben involucrar al estado, al sector empresarial y a la sociedad civil, y establecer como ejes principales la generación de una cultura de uso racional de la energía en la población, la formulación de políticas nacionales y el diseño de un marco regulatorio adecuado, que permitan el correcto balance entre el crecimiento económico y la demanda en el consumo eléctrico, acompañar el crecimiento económico del país, suministrando el servicio eléctrico requerido por hogares, comercios e industrias; bajo un enfoque sostenible que permite asegurar la protección de los recursos naturales para las generaciones futuras, El Salvador cree que la sostenibilidad tiene entre uno de sus principales fundamentos la eficiencia energética, por ello se ocupa de brindar de forma permanente capacitación, información y asesoría, fortalecer sus herramientas tecnológicas para asistir a sus clientes, y disponer de programas permanentes dirigidos a crear una cultura de uso responsable y seguro de la energía eléctrica en las nuevas generaciones, hay propuestas, pero no estan siendo llevadas a cabo.\cite{MIESA}
 
 \section{Teorías acerca de la eficiencia enérgetica}
+
+Aunque a priori pudiera pensarse que “eficiencia energética” es un concepto
+autoexplicativo y que,el alcance del mismo está claramente
+delimitado, la realidad muestra que se trata de un término dificil, como lo
+demuestran las dificultades que encuentran algunos expertos para ponerse de
+acuerdo a la hora de establecer indicadores específicos de eficiencia
+energética, en el caso de esta investigacion se abordara de manera mas sencilla, basandose unicamente en la cantidad de energía consumida y si esta se puede reducir, dejando claro el hecho de que si se puede encontrar una manera de reducir el consumo energetico entonces puede lograrse la eficiencia energetica.
+
+A manera de ejemplo puede suponerse, la maroria reconoce como
+medida de eficiencia energética el aislamiento de las viviendas, al mantener el
+nivel de confort con un ahorro de energía (en el caso de la UES FMOcc la maximizacion de las capacidades de los aparatos electricos con el consumo minimo de energía), pero este ahorro energético que se
+produce a nivel individual no necesariamente se visualiza a nivel del conjunto
+de la comunidad, un incremento en el número de viviendas construidas o un
+aumento de la demanda de confort (más electrodomésticos, aire
+acondicionado, etc.), pueden enmascarar las mejoras en la eficiencia
+energética alcanzadas a nivel individual, es decir puede que no se logre la eficiencia energetica deseada. 
 
 \section{Teorías estadísticas}
 

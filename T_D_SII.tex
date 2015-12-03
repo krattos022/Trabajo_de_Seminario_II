@@ -77,7 +77,10 @@ FERNANDO ERNESTO MANZANARES MORÁN\\
 \chapter*{Abstract}
 \addcontentsline{toc}{chapter}{Abstract}
 \pagenumbering{arabic}
-Erase una vez...
+Why is conserving energy important? As you can see there are many reasons that conservation is important, ranging from the environment to the economy. The world's dependence on fossil fuels is creating a problem that will affect generations to come. It is important that energy not only be conserved, but also that research continues to find cleaner and better solutions for future generations, in this case the investigation applies a time series to help to UES FMOcc to find a good way to save electrical energy, that means make the energy consumption has to be a priority, in the same line reducing the amount of energy  that they use is a good way to save money, and there are also other benefits to decreasing energy consumption, the efficient use of energy and apply a time series is a priority in this investigation, and this investigation discover that the time series model that describe the energy consumption in UES FMOcc is a SARISMA(0,0,2)*(0,1,1) and the forecasting of this model says that the UES FMOcc has not an efficient energy consumption and have to be fixed.
+
+
+\textbf{Keywords: Forecast, Time series, energy consumption, conserved energy.}
 \chapter*{Introducción}
 \addcontentsline{toc}{chapter}{Introducción}
 
@@ -164,13 +167,50 @@ $H_1$ Los periodos donde más energia electrica se consume no son durante los ci
 
 \chapter{Fundamentación teórica}
 \section{Antecedentes}
+
   \subsection{Eficiencia Energetica en España}
 
-    La eficiencia enérgetica 
+Las variaciones marginales del consumo de energía en España, que son
+debidas tanto a la evolución de la actividad económica como a las
+modificaciones de la intensidad energética, implican variaciones equivalentes
+en las importaciones de petróleo, es decir españa depende mucho del petroleo como fuente de energía, en la estrategia de Ahorro y Eficiencia Energética que España posee se ha previsto una mejora
+sostenida de la intensidad energética durante los próximos años. Pero lo
+realmente importante a señalar no son las cifras absolutas de mejora, sino el
+porcentaje de mejora de la eficiencia que en la práctica se puede conseguir, es decir la conciencia ambiental juega un papel fundamental para un pais como España. 
+
+ \subsection{Eficiencia Energetica en Chile}
+ 
+¿Cómo es el consumo energético en Chile?
+
+El grupo de energéticos que más se consume corresponde a los derivados del petróleo, que representa el 54\% del consumo final secundario, prácticamente la totalidad de los derivados debe ser importada o son producto de la refinación de petróleo crudo, cuya importación alcanza al 96,5\%,el segundo energético más utilizado es la electricidad, que representa el 19,2\% del consumo final; le sigue la leña con el 17,8\%, el gas natural con el 5,5\%, esto según el estudio de mercado en chile, en febrero de 2012 se dio a conocer la Estrategia Nacional de Energía 2012-2030, que se basa en 6 pilares fundamentales entre ellos el aborade de la Eficiencia energetica. 
 
 
+ \subsection{Eficiencia Energetica en México}
+ 
+ Históricamente, el sector energético de México ha dependido de los hidrocarburos para satisfacer la energía que demanda el país. Sin embargo, la producción nacional de energía primaria ha disminuido constantemente desde 2004, debido a la caída inercial que presentó la producción de petróleo, que se originó principalmente por la declinación del yacimiento de Cantarell. Por otro lado, el consumo nacional de energía se ha mantenido a la alza por varios años,
+lo anterior ha llevado a reflexionar sobre el riesgo que enfrenta la productividad del país ante una tendencia que haga vulnerable la eficiencia energética en los siguientes años, hoy en día una preocupación prioritaria de los gobiernos modernos en todo el mundo se focaliza en promover el aprovechamiento sustentable del uso de la energía y la utilización de nuevas fuentes de energía, sin menoscabar aspectos claves que propicien el crecimiento económico, la seguridad energética y la adaptación al cambio climático de cada país, dada la situación actual, el Gobierno de la República atiende la necesidad de llevar a cabo acciones para el aprovechamiento sustentable de la energía que contribuyan a la seguridad energética y económica del país, promoviendo la eficiencia energética en los diversos sectores productivos y de consumo de energía en México, a partir del reconocimiento de las áreas de oportunidad y sus fortalezas institucionales\cite{Mexico}.
+
+\subsection{Eficiencia Energetica en El Salvador}
+
+Hablar de ahorro energético es complejo, siendo la energía un elemento básico para la productividad, por lo que al buscar una solución viable y sostenible la propuesta es lograr un uso eficiente de este recurso. los programas de eficiencia energética deben involucrar al estado, al sector empresarial y a la sociedad civil, y establecer como ejes principales la generación de una cultura de uso racional de la energía en la población, la formulación de políticas nacionales y el diseño de un marco regulatorio adecuado, que permitan el correcto balance entre el crecimiento económico y la demanda en el consumo eléctrico, acompañar el crecimiento económico del país, suministrando el servicio eléctrico requerido por hogares, comercios e industrias; bajo un enfoque sostenible que permite asegurar la protección de los recursos naturales para las generaciones futuras, El Salvador cree que la sostenibilidad tiene entre uno de sus principales fundamentos la eficiencia energética, por ello se ocupa de brindar de forma permanente capacitación, información y asesoría, fortalecer sus herramientas tecnológicas para asistir a sus clientes, y disponer de programas permanentes dirigidos a crear una cultura de uso responsable y seguro de la energía eléctrica en las nuevas generaciones, hay propuestas, pero no estan siendo llevadas a cabo.\cite{MIESA}
 
 \section{Teorías acerca de la eficiencia enérgetica}
+
+Aunque a priori pudiera pensarse que “eficiencia energética” es un concepto
+autoexplicativo y que,el alcance del mismo está claramente
+delimitado, la realidad muestra que se trata de un término dificil, como lo
+demuestran las dificultades que encuentran algunos expertos para ponerse de
+acuerdo a la hora de establecer indicadores específicos de eficiencia
+energética, en el caso de esta investigacion se abordara de manera mas sencilla, basandose unicamente en la cantidad de energía consumida y si esta se puede reducir, dejando claro el hecho de que si se puede encontrar una manera de reducir el consumo energetico entonces puede lograrse la eficiencia energetica.
+
+A manera de ejemplo puede suponerse, la maroria reconoce como
+medida de eficiencia energética el aislamiento de las viviendas, al mantener el
+nivel de confort con un ahorro de energía (en el caso de la UES FMOcc la maximizacion de las capacidades de los aparatos electricos con el consumo minimo de energía), pero este ahorro energético que se
+produce a nivel individual no necesariamente se visualiza a nivel del conjunto
+de la comunidad, un incremento en el número de viviendas construidas o un
+aumento de la demanda de confort (más electrodomésticos, aire
+acondicionado, etc.), pueden enmascarar las mejoras en la eficiencia
+energética alcanzadas a nivel individual, es decir puede que no se logre la eficiencia energetica deseada. 
 
 \section{Teorías estadísticas}
 
@@ -401,8 +441,511 @@ pronósticos e intervalos de predicción a requerimiento del analista \cite{Isaa
 
 
 
+\chapter{Metodología}
+\section{Tipo de Investigación}
+Se realiza un estudio descriptivo retrospectivo porque es un estudio longitudinal en el tiempo que se analiza en el presente, pero con datos del pasado.
+\section{Población}
+Se cuenta con una cantidad de registros del consumo energético mensuales de la UES FMOcc desde enero del 2009 hasta agosto de 2015.
+\section{Intrumentos}
+Con el propósito de obtener un modelo que se ajuste a las series de tiempo
+se utilizan softwares para determinar el mejor modelo, éstos son: Gretl, R y
+SPSS.
+
+\section{Procedimiento}
+
+Previo a la utilización de la metodología
+ARIMA se verifica que las series cumplieran con los requisitos recomendados por algunos autores: consistencia, estabilidad y no existencia de valores
+perdidos y que tuvieran un número suficiente de observaciones (más de 50
+observaciones por cada serie temporal), la existencia de autocorrelación se
+explora mediante el gráfico de las funciones de autocorrelación o correlograma y los ordenes de los términos incluidos en los diferentes modelos se correspondieron con los coeficientes de correlación simple y parcial estadísticamente
+significativos, para la selección del modelo adecuado se sigue la metodología
+Box-Jenkins que consta de las siguientes etapas :Identificación, Estimación,
+Diagnosis o chequeo y Predicciones (Pronósticos), se sigue ésta metodología
+siempre que la serie sea estacionaria en media y en varianza, para lograr la
+estacionariedad de la serie y estabilizar la media y las autocorrelaciones se
+realizan diferenciaciones, es decir reemplazar las observaciones por el valor de
+la diferencia entre esta y la observación anterior para la diferenciación regular
+(de orden 1) o reemplazarla por la diferencia entre la observación actual y la
+correspondiente al periodo estacional anterior para la diferenciación estacional. Además se efectúa, sobre todo transformación de Box-Cox a los datos
+para la estabilizacion de la varianza, la busqueda del modelo que mejor se
+ajuste a las series se efectúa tratando de que sean sencillos, explicaran bien
+las correlaciones internas del proceso y produjeran una diferencia mínima
+entre el valor observado y el esperado. Esto se realiza de manera iterativa,
+probando las combinaciones más lógicas de términos regulares AR y MA y
+de términos estacionales SAR y SMA, incluyendo las diferenciaciones necesarias. La adecuación de un modelo se estableció a partir del análisis de la
+significación estadística de los parámetros del mismo, de las características
+de los residuos o errores producidos por el modelo sobre la serie y del valor del error de predicción, se utiliza el Porcentaje de Error Medio Absoluto
+(MAPE).
+\chapter{Analisis de los Datos}
+Presentacion de los datos:
+
+\begin{table}[ht]
+\caption{Registros del consumo energetico en Kw/h} \label{Datos}
+\centering
+\begin{tabular}{lrrrrrrr}
+\hline
+  \hline
+  Meses/Años & 2009& 2010& 2011& 2012& 2013& 2014& 2015 \\ 
+  \hline
+Enero    &6299&	9652&	10921&	8788&	10922&	11786&	11024 \\
+    \hline
+Febrero    &18237&	20676&	22251&	18085&	20625&	19406&	18593 \\
+    \hline
+Marzo    &26416&	35408&	36067&	32867&	34239&	33325&	32106 \\
+    \hline
+Abril    &30059&	31546&	42266&	29160&	30327&	41981&	31394 \\
+    \hline
+Mayo    &37505&	41199&	29261&	34341&	37033&	29850&	41651 \\
+    \hline
+Junio    &39370&	42164&	38202&	35712&	38811&	38354&	41560 \\
+    \hline
+Julio    &35814&	33579&	16255&	29565&	33884&	35204&	35915 \\
+    \hline
+Agosto    &19151&	27229&	24435&	23470&	27635&	25858&	25756 \\
+    \hline
+Septiembre    &38658&	40030&	34671&	33122&	41097&38512	& \\
+    \hline
+Octubre  &38994&	37948&	31354&	35154&	40081&	41093& \\
+    \hline
+Noviembre  &38993&	38354&	28972&	33985&	39675&	38201& \\
+    \hline
+Diciembre    &36617&	34544&	30023&	31293&	35763&	34900& \\	
+
+\hline
+   \hline
+\end{tabular}
+\caption*{Fuente: \cite{ANelson}}
+\end{table}
+
+La tabla \ref{Datos} muestra la poblacion de registros del consumo electrico de la UES FMOcc desde enero de 2009 hasta agosto de 2015 en Kw/h,\footnote{Kilowatts por Hora} en una primera observación puede notarse como el cosumo para el mes de enero y diciembre varían mucho del resto, es decir, es lógico suponer que en los meses de vacaciones la UES FMOcc consuma menos cantidad de energía.
+\newpage
+Su representacion gráfica\footnote{Realizada con Gretl} como una serie de tiempo es la siguiete:
+
+\begin{figure}[htb]
+
+\centering
+\caption{Serie de tiempo de los datos del consumo enérgetico} 
+\includegraphics [width=0.8\textwidth]{Graf1}
+\caption*{Fuente: Propia} \label{Graf}
+
+\end{figure}
+
+Del gráfico \ref{Graf} puede notarse como el comportamiento del cosumo electrico pareciera ser ciclico o estacional, dado que se repite cada año, en palbras mas sencillas si se trazara una linea vertical en la marca de cada año (sobre el eje horizontal) podria observarse como se forma una especie de "M" en cada año denotando un patron estacional claro, Ademas la serie pareciera sser no estacionaria tanto en media como en varianza, para probar esto se hara uso de la prueba de Dickey Fuller Aumentada realizada con el sofware R.
+
+\begin{Schunk}
+\begin{Sinput}
+> #cargando librerías necesarias
+> library(tseries)
+> library(xts)
+> library(fUnitRoots)
+> #cargando base de datos
+> datosSII<-read.csv("SeriesDatosSII.csv", header = TRUE,sep = ",")
+> #aplicando formato de serie temporal
+> Base<- ts(datosSII$RPV, start = c(2009,1), end = c(2015,8), frequency = 12)
+> #Test ADF con constante y tendencia
+> ADF1<-adfTest(Base, lags = 11, type = "ct")
+> #Test ADF con constante
+> ADF2<-adfTest(Base, lags = 11, type = "c")
+\end{Sinput}
+\end{Schunk}
+
+\begin{table}[ht]
+\caption{Test de Dickey Fuller Aumentado} \label{Test1}
+\centering
+\begin{tabular}{lr}
+\hline
+  \hline
+ \multicolumn{2}{|c|}{$H_0$: existencia de raíz unitaria: a = 1 }\\
+ \hline
+Tipo de contraste & P-valor\\ 
+ \hline
+Con constante & 0.7238\\
+ \hline
+Con constante y tendencia & 0.9414\\
+
+\hline
+   \hline
+\end{tabular}
+\caption*{Fuente: Propia}
+\end{table}
+
+De la tabla \ref{Test1} puede concluirse que la serie no es estacionaria ya que el P-valor de la prueba de ADF es mayor a 0.05 por lo que hay existencia de raiz unitaria y por lo tanto la serie es no estacionaria.
+
+\begin{figure}[htb]
+
+\centering
+\caption{Correlogramas FAC y FACP de los datos del consumo enérgetico} 
+\includegraphics [width=0.8\textwidth]{CX}
+\caption*{Fuente: Propia} \label{Graf2}
+
+\end{figure}
+
+El gráfico \ref{Graf2} desarrollado en Gretl, muestra tambien como la serie es no estacionaria dado que varios de los primeros retardos en FAC y FACP son significativamente diferentes de cero ademas puede notarse que los retardos 1, 12, 24, 36 y 48 para FAC poseen una correlacion significativamente diferente de cero lo que da la pauta para concluir que la serie analizada es estacional.
+
+\section{Estacionarización de los datos}
+
+Para estacionarizar los datos se hará uso de una diferencia estacional para estabilizar en media y reducir la estacionalidad y de la transformación de box-cox para estabilizar la varianza, este analisis se desarrollará en R.
+
+\begin{Schunk}
+\begin{Sinput}
+> #cargando librerías necesarias
+> library(tseries)
+> library(xts)
+> library(TSA)
+> #cargando base de datos
+> datosSII<-read.csv("SeriesDatosSII.csv", header = TRUE,sep = ",")
+> #aplicando formato de serie temporal
+> Base<- ts(datosSII$RPV, start = c(2009,1), end = c(2015,8), frequency = 12)
+> #buscando un lambda para la transdormació
+> BoxCox.ar(datosSII$RPV)
+> #Aplicando la diferecia estacional
+> #con el retardo 12
+> DFE<-diff(Base, lag = 12)
+\end{Sinput}
+\end{Schunk}
+
+\begin{figure}[htb]
+
+\centering
+\caption{Test de Box-Cox para encontrar un Lambda Adecuado} 
+\includegraphics [width=0.4\textwidth]{BoxcoxPlot}
+\caption*{Fuente: Propia} \label{Graf3}
+
+\end{figure}
+\newpage
+Puede observarse en el gráfico \ref{Graf3} que la linea central de las tres lineas verticales punteadas estan cercanas a el valor de 1 por lo que la transformación de Boxcox sugiere que lambda sea igual a 1 con un 95\% de confianza, sin embargo que lambda sea igual a 1 indica que no es necesario aplicar una transformación a los datos.
+
+\begin{figure}[htb]
+
+\centering
+\caption{Serie estabilizada en media por una diferecia estacional} 
+\includegraphics [width=0.5\textwidth]{SerieDIFF}
+\caption*{Fuente: Propia} \label{Graf4}
+
+\end{figure}
+
+Del gráfico \ref{Graf4} puede observarse que la serie ha sido estabilizada en media y pareciera que también esta estabilizada en varianza aun sin hacer alguna transformación, sin embargo se realizará el Test de ADF para probar si la serie difereciada es estacionaria.
+
+\begin{table}[ht]
+\caption{Test de Dickey Fuller Aumentado} \label{Test2}
+\centering
+\begin{tabular}{lr}
+\hline
+  \hline
+ \multicolumn{2}{|c|}{$H_0$: existencia de raíz unitaria: a = 1 }\\
+ \hline
+Tipo de contraste & P-valor\\ 
+ \hline
+Con constante & 0.00339\\
+ \hline
+Con constante y tendencia & 0.01873\\
+
+\hline
+   \hline
+\end{tabular}
+\caption*{Fuente: Propia}
+\end{table}
+
+Puede observarse que segun la tabla \ref{Test2} el P-valor de la prueba ADF desarrollada en Gretl es menor que 0.05 por lo que hay evidencia estadistica pra rechazar $H_0$ por lo tanto la nueva serie es estacionaria con una diferencia estacional.
+
+\section{Selección del modelo}
+
+El modelo a utilizar sera un SARISMA para ecoger el valor de los retardo se hara uso de los correlogramas de la serie estacionarizada.
+
+\begin{figure}[htb]
+
+\centering
+\caption{Correlograma de la serie estacionaria} 
+\includegraphics [width=0.5\textwidth]{CEST}
+\caption*{Fuente: Propia} \label{Graf5}
+
+\end{figure}
+
+Puede observarse en el gráfico \ref{Graf5} que para la FAC el segundo retardo es considerablemente diferente de cero por lo que sugiere un modelo ARIMA(0,0,2) y con su componente estacional SARISMA(0,1,1)\footnote{En este caso D=1 por que fue difereciada estacionalmente una sola vez.}, al mismo tiempo el correlograma segun el FACP sugiere ARIMA(2,0,0) dado que el retardo 2 es considerablemente diferente de cero y su componente estacional un SARISMA(1,1,0), Entonces tenemos dos posibilidades un SARISMA(2,0,0)*(1,1,0) ó un SARISMA(0,0,2)*(0,1,1). se hara el ajuste de ambos modelos y se escogera el que sea mas significativo estadisticamente.
+
+\subsection{Ajuste del modelo SARISMA(2,0,0)*(1,1,0)\\ y SARISMA(0,0,2)*(0,1,1)}
+
+Al hacer el ajuste en Gretl pudo observarse lo siguiente:
+
+\textbf{Ajuste del modelo SARISMA(2,0,0)*(1,1,0)}
+
+\begin{center}
+\begin{table}[htb]
+\caption{Estadísticos de comparación}
+\begin{tabular}{lrlr}
+ \hline
+Media de la vble. dep. &  361.6471 & D.T. de la vble. dep. &  5589.167 \\
+ \hline
+media innovaciones &  39.44258 & D.T. innovaciones &  4746.117 \\
+ \hline
+Log-verosimilitud & $-$673.2666 & Criterio de Akaike &  1356.533 \\
+ \hline
+Criterio de Schwarz &  1367.631 & Hannan--Quinn &  1360.930 \\
+ \hline
+\end{tabular}
+\caption*{Fuente: Propia} \label{xDD}
+\end{table}
+\end{center}
+
+Puede observarse en la tabla \ref{xDD} que el AIC, y el HQC tienen un valor de 1356.533 y 1360.930
+respectivamente lo que servira de comparacion para el siguiente modelo.
 
 
+\textbf{Ajuste del modelo SARISMA(0,0,2)*(0,1,1)}
+
+\begin{center}
+
+\begin{table}[htb]
+\caption{Estadísticos de comparación}
+\begin{tabular}{lrlr}
+ \hline
+Media de la vble. dep. &  361.6471 & D.T. de la vble. dep. &  5589.167 \\
+ \hline
+media innovaciones & $-$153.5331 & D.T. innovaciones &  3649.986 \\
+ \hline
+Log-verosimilitud & $-$665.7208 & Criterio de Akaike &  1341.442 \\
+ \hline
+Criterio de Schwarz &  1352.539 & Hannan--Quinn &  1345.839 \\
+ \hline
+\end{tabular}
+\caption*{Fuente: Propia} \label{xDD2}
+\end{table}
+
+\end{center}
+
+Puede observarse en la tabla \ref{xDD} que el AIC, y el HQC tienen un valor de 1341.533 y 1345.930
+respectivamente lo que servira de comparacion para escoger el modelo.
+
+\textbf{Conclusíon}
+
+Dado que el AIC y el HQC son mas pequeños en el ajuste del modelo SARISMA(0,0,2)*(0,1,1) se selecionara éste para el analisis de los datos del consumo de energía.
+
+\section{Validación del modelo}
+
+En esta etapa se comprueba la normalidad de los resíduos del modelo y
+la incorrelación de los resíduos, si una de estas condiciones no se cumple es
+porque el modelo no es adecuado.
+
+\subsection{Incorrelación en los residuos}
+
+\begin{figure}[htb]
+
+\centering
+\caption{Correlograma de la serie estacionaria} 
+\includegraphics [width=0.5\textwidth]{Modelo}
+\caption*{Fuente: Propia} \label{Graf6}
+
+\end{figure}
+
+El gráfico \ref{Graf6} muestra que los resíduos del modelo SARISMA identificado
+son incorrelados, es decir, todos o la mayoría no se salen de las bandas rojas que representan el intervalo de confianza a un nivel de confianza el 95
+por ciento.
+
+\subsection{Normalidad en los residuos}
+
+\begin{figure}[htb]
+
+\centering
+\caption{Correlograma de la serie estacionaria} 
+\includegraphics [width=0.5\textwidth]{ModeloQQ}
+\caption*{Fuente: Propia} \label{Graf7}
+
+\end{figure}
+
+Para verificar la normalidad de los residuos se utiliza el estadístico Chi
+cuadrado con hipótesis nula: Existe normalidad, y el gráfico QQ (\ref{Graf7}) de los
+resíduos  el cual comprueba la existencia de normalidad si los puntos del
+gráfico de dispersión se ajustan muy bien a la recta con pendiente positiva y = x. El p valor de la prueba es igual a
+0,8828, como el p valor es mayor que el nivel de significancia de cinco por
+ciento entonces se acepta la hipótesis nula de que los resíduos del modelo son
+normales.
+
+\section{Proyecciones}
+
+
+\begin{figure}[htb]
+
+\centering
+\caption{Correlograma de la serie estacionaria} 
+\includegraphics [width=0.5\textwidth]{Proyecciones}
+\caption*{Fuente: Propia} \label{Graf8}
+
+\end{figure}
+
+\begin{center}
+ Para intervalos de confianza 95\%, $z(0.025) = 1.96$
+
+\end{center}
+
+\begin{center}
+\begin{table}[htb]
+\caption{Proyecciones del Modelo}
+\begin{longtable}{%
+r% col 1: obs
+  r@{.}l% col 2: actual
+    r@{.}l% col 3: fitted
+      r@{.}l% col 4: std error
+        r@{.}l% col 5: conf int lo
+         r@{.}l}% col 5: conf int hi
+Observaciones & \multicolumn{2}{c}{Consumo\_Mensual\_Energia}  & \multicolumn{2}{c}{predicción}
+  & \multicolumn{2}{c}{Desv. Típica}
+   & \multicolumn{4}{c}{Intervalo de 95\% } \\[1ex]
+     \hline
+ 2015:09  & \multicolumn{2}{c}{} & 39211&16 & 3649&986 & 32057&32 & 46365&00 \\
+  \hline
+ 2015:10  & \multicolumn{2}{c}{} & 37730&96 & 3689&022 & 30500&61 & 44961&31 \\
+  \hline
+ 2015:11  & \multicolumn{2}{c}{} & 37162&87 & 3842&656 & 29631&40 & 44694&34 \\
+  \hline
+ 2015:12  & \multicolumn{2}{c}{} & 34917&81 & 3842&656 & 27386&34 & 42449&28 \\
+  \hline
+ 2016:01  & \multicolumn{2}{c}{} & 11111&38 & 3842&656 & 3579&91 & 18642&85 \\
+  \hline
+ 2016:02  & \multicolumn{2}{c}{} & 21278&06 & 3842&656 & 13746&59 & 28809&52 \\
+  \hline
+ 2016:03  & \multicolumn{2}{c}{} & 34445&35 & 3842&656 & 26913&88 & 41976&82 \\
+  \hline
+ 2016:04  & \multicolumn{2}{c}{} & 35614&87 & 3842&656 & 28083&40 & 43146&34 \\
+  \hline
+ 2016:05  & \multicolumn{2}{c}{} & 36255&81 & 3842&656 & 28724&35 & 43787&28 \\
+  \hline
+ 2016:06  & \multicolumn{2}{c}{} & 40159&68 & 3842&656 & 32628&21 & 47691&15 \\
+  \hline
+ 2016:07  & \multicolumn{2}{c}{} & 32107&43 & 3842&656 & 24575&96 & 39638&89 \\
+  \hline
+ 2016:08  & \multicolumn{2}{c}{} & 26020&34 & 3842&656 & 18488&87 & 33551&80 \\
+  \hline
+ 2016:09  & \multicolumn{2}{c}{} & 39060&78 & 3842&656 & 31529&31 & 46592&25 \\
+  \hline
+ 2016:10  & \multicolumn{2}{c}{} & 38251&39 & 3842&656 & 30719&92 & 45782&86 \\
+  \hline
+ 2016:11  & \multicolumn{2}{c}{} & 37471&91 & 3842&656 & 29940&44 & 45003&38 \\
+  \hline
+ 2016:12  & \multicolumn{2}{c}{} & 35226&85 & 3842&656 & 27695&38 & 42758&32 \\
+  \hline
+ 2017:01  & \multicolumn{2}{c}{} & 11420&42 & 3842&656 & 3888&95 & 18951&89 \\
+  \hline
+ 2017:02  & \multicolumn{2}{c}{} & 21587&10 & 3842&656 & 14055&63 & 29118&56 \\
+  \hline
+\end{longtable}
+\caption*{Fuente: Propia}\label{xDDD}
+\end{table}
+\end{center}
+
+
+
+Puede observarse en el gráfico \ref{Graf8} las proyeciones realizadas por el modelo y como éste se ajusta considerablemente bien a los datos originales, ademas en la tabla \ref{xDDD} puen observarse las proyeciones de energía que sera consumida en los proximos 18 meses junto con sus intervalos de confianza.
+
+
+\chapter*{Conclusiones}
+\addcontentsline{toc}{chapter}{Conclusiones}
+En Respuesta a las Hipotesis y preguntas de Investigación:
+\begin{enumerate}
+  \item Para la Hipotesis 1. No hay suficiente evidencia para rechazar la hipotesis nula por lo que se concluye que NO hay eficiencia enérgetica en los edificios de la UES FMOcc.
+  \item Para la Hipotesis 2. Hay suficiente evidencia para rechazar la Hipotesis nula por lo que dada las proyecciones realizadas pudo determinarse que el consumo energetico es estable a través del tiempo, sin embargo puede llegar a reducirse.
+  \item Para la Hipotesis 3. No hay suficiente evidencia para rechazar la hipotesis nula por lo que se concluye que el periodo de tiempo donde mas energía se consume es el los ciclos activos en la UES FMOcc.
+  \item Si es posible alcanzar la eficiencia energetica a través de las propuestas de \cite{ANelson} que sugieren la reduccion del consumo energetico y su costo.
+  \item La cantidad de energía Ahorrada dependera de la correcta aplicacion de las propuestas de \cite{ANelson} y podria llegar a ahorrase hasta un 30\%- 60\% en un largo plazo de 18 meses.
+\end{enumerate}
+
+En respuesta a los Objetivos:
+
+\begin{enumerate}
+  \item Si se logro desarrollar las proyecciones del consumo energetico a través de una serie temporal
+  \item El periodo de tiempo donde se consume mayor cantidad de energía según los datos y las proyeciones analizadas es en los meses de Febrero, Marzo, Abril, Mayo, Junio, Septiembre, Octubre, Noviembre y donde es mas bajo el consumo en Enero, Julio, Agosto y Diciembre.
+  \item Este objetivo sera respondido gracias al trabajo de \cite{ANelson} de la siguiente manera.
+\end{enumerate}
+
+\section*{Medidas Correctivas}
+
+\addcontentsline{toc}{chapter}{Medidas Correctivas}
+
+Algunas de las medidas consideradas en este trabajo gracias a \cite{ANelson} son las siguientes:
+
+\textbf{Problema 1.}
+
+\textbf{Descripción:}
+
+El sistema de climatización de la Facultad Multidisciplinaria de Occidente consta de demasiadas unidades de aire acondicionado con baja capacidad de refrigeración (capacidad máxima de 5 Toneladas de Refrigeración (TR)), esto causa el inconveniente que deban emplazarse muchas unidades para satisfacer la demanda térmica de un edificio, como el caso del edificio de Carreras Múltiples donde hay 20 aires acondicionados emplazados para una capacidad instalada de 75 TR, donde pudo emplazarse tres unidades de 25 TR. El problema es el consumo de energía eléctrica excesivo en 20 aires acondicionados comparado con el consumo de tres o cuatro unidades que sumen la misma capacidad de 75 TR; entonces, cuando se tenga que sustituir el sistema de climatización debe evaluarse la alternativa de emplazar una sola unidad que suministre la demanda térmica completa del edificio y que proporcione menor consumo de energía.
+Además se aumentan los costos de mantenimiento, ya que, se tiene que intervenir correctiva y preventivamente a las 20 unidades realizando sustitución de piezas y partes como condensadores, compresores, también recargar el fluido refrigerante, revisar sistema eléctrico, entre otras intervenciones a varias de las unidades al mismo tiempo, en cambio si se tiene solo una unidad exterior de aire acondicionado el mantenimiento preventivo y correctivo será exclusivo para ésta ahorrando incluso recurso humano.
+El tener una sola unidad exterior no quiere decir, que si se encuentra está en funcionamiento, todas las oficinas estarán climatizadas aunque estén vacías, ya que, este tipo de aires acondicionados de gran capacidad permiten instalar varias unidades interiores cada una de las cuales se controla individualmente permitiendo tener oficinas con el aire acondicionado apagado, incluso oficinas a diferentes temperaturas.
+
+\textbf{Medida correctiva}
+
+Consiste en sustituir los aires acondicionados de baja capacidad de refrigeración instalados en los edificios por una unidad climatizadora individual que cubra la misma demanda térmica que los equipos sustituidos. La acción está pensada primeramente para disminuir el consumo de electricidad que provoca el tener demasiadas unidades de aire acondicionados instaladas; la nueva unidad climatizadora además de proporcionar la misma capacidad de refrigeración tiene un consumo menor de electricidad como consecuencia principal de que solo se tendrá un compresor demandando potencia de funcionamiento a diferencia de tener 20 compresores demandando potencia en el caso los 20 aires acondicionados del edificio de Carreras Múltiples. Además se mejorará la gestión del mantenimiento de este sistema.
+
+\textbf{Problema 2.}
+
+\textbf{Descripción.}
+
+Las oficinas y laboratorios que cuentan con aire acondicionado instalado no tienen sistema de renovación de aire que produce el inconveniente de disminuir la calidad de éste, la causa principal es la concentración de di-óxido de carbono que aumenta progresivamente debido a la transpiración de las personas que se encuentran dentro de la oficina. Instalar un sistema de renovación de aire representa un aumento en la demanda térmica del sistema de climatización, con el correspondiente aumento del consumo en electricidad, sin embargo, es mucho menor que la carga por transmisión, por equipo, por personas y por radiación, pero, lo importante es garantizar la salubridad del aire que las personas respiran cuando se encuentran dentro de las oficinas.
+
+El aire debe de renovarse por lo menos cada hora, sin embargo, el sistema de renovación de aire renovará el aire por lo menos cada hora mientras el aire acondicionado esté en funcionamiento.
+
+Los inconvenientes que causa el no contar con sistema de renovación de aire en las oficinas y laboratorios son los siguientes:
+
+\begin{itemize}
+
+ \item Disminución de la calidad del aire debido por las concentraciones de di-óxido de carbono.
+	 \item Aumento de la probabilidad de enfermedades producto de aire contaminado.
+
+\end{itemize}
+
+El no contar con sistema de renovación de aire tiene beneficios desde el punto de vista del consumo como los siguientes:
+
+\begin{itemize}
+
+  \item Disminución de la demanda térmica de las oficinas y laboratorios
+  \item Disminución de los costos de la factura eléctrica que se paga a la empresa distribuidora
+
+\end{itemize}
+
+Esta disminución es pequeña, además, no se puede disminuir el consumo de electricidad a costa de la salud y seguridad de las personas y por eso el sistema de renovación de aire es necesario.
+
+\textbf{Medida correctiva}
+
+Consiste en instalar dos ventiladores en la oficina o laboratorio, un primer ventilador que extraiga el aire contaminado del interior del espacio climatizado y un segundo ventilador que introduzca aire salubre del exterior al interior de la oficina. Los sistemas industriales se instalan en el techo de los edificios, sin embargo, el edificio debe contar con un sistemas de ductos de ventilación que conduzcan el aire renovado y contaminado que actualmente no se tiene, esto con el motivo de renovar el aire de todas las oficinas y laboratorios con un solo sistema. También se puede instalar un sistema individual en cada oficina o laboratorio simplemente con dos ventiladores pequeños.
+Hay lugares donde no es estrictamente necesario el sistema de renovación de aire, en especial aquellos donde se concentran menos de cinco personas; una solución práctica sería que estas personas tuvieran la responsabilidad de renovar el aire abriendo las ventanas cuando se da el descanso por motivo de almuerzo de 12:00 a 2:00 pm, cerrándolas al terminar el descanso, sería un hábito que mejoraría las condiciones de salubridad del aire. Ahora, los lugares donde es necesario instalar el sistema de renovación son los que tiene altas concentraciones de personas, como salas de exposiciones y conferencias, centros de cómputo, laboratorios  y salones de clase. Entonces en estos se instalará el sistema.
+
+\textbf{Problema 3.}
+
+\textbf{Descripción}
+
+Según la investigación realizada en la Facultad se percibe que uno de las problemáticas más comunes que se presentan, es la falta de sectorización de algunos de los circuitos de luminarias internas de edificios tanto de oficinas administrativas como de áreas comunes como aulas, y con esto se tiene una fuga de energía eléctrica desperdiciada cada vez que son utilizadas las luminarias.
+
+\textbf{Medida Correctiva}
+
+La sectorización por áreas y zonas, es la acción correctiva consiste en realizar el ordenamiento en los circuitos de las luminarias internas que presentan un patrón que no está bien definido o que presentan características que no van de acuerdo al tipo de actividad de se realiza en el lugar. Se presentan dos de los patrones que deberán ser usados en los espacios de donde a color rojo se tienen las secciones de los circuitos como deben ser controlados por un mismo apagador y con esto iluminar zonas independientes de otras.
+
+Patrón 01: Para este corresponde la figura  donde el patrón de los circuitos esta dado como bloques paralelos a la pizarra, donde este está enfocado a aquellas aulas que presentan un nivel de iluminación aproximadamente igual en todos sus puntos y que la iluminación natural no provoca mayor incidencia en los niveles de iluminación del área.
+
+Patrón 02: En este caso la sectorización está dada por con un patrón mixto donde se tienen bloques paralelos a la pizarra de los circuitos controlados por apagadores independientes, pero sumado a esto se tiene una sección que es paralela a las ventanas del aula en cuestión donde puede verse en la figura. Este patrón de conexión de los circuitos de las luminarias es con el fin aprovechar la luz natural proveniente de las ventanas.
+
+Patrón 03: Se propone un tercer caso en donde a criterio de las condiciones que se presentan en el áreas deber ser establecido el orden de los circuitos como es el caso de laboratorios y oficinas, pues en función de las exigencias que se necesitan lumínicamente, así deberá ordenarse donde no hay un patrón establecido.
+
+\textbf{Problema 4.}
+
+\textbf{Descripción }
+
+Se pueden plantear acciones de eficiencia energética bien estructuradas en innovación tecnológica (equipo electrónico de menor consumo), domótica (control automatizado de equipos electrónicos), entre muchas otras que pretendan disminuir el consumo de energía sin tomar en cuenta las práctica humanas; y aun así, tener desperdicio de electricidad debido a las actividades de los seres humanos que favorecen el uso ineficiente de la energía. El problema es, que la comunidad universitaria ejecuta prácticas y tiene hábitos en el uso de equipo eléctrico-electrónico que incurren en desperdicio de energía, se citan unos ejemplos:
+
+\begin{itemize}
+\item No apagar iluminación en salones de clase vacíos y áreas de trabajo.
+\item Ajustar aires acondicionados con temperaturas diferentes de la temperatura de confort.
+\item Comprar equipos electrónicos baratos y de alto consumo eléctrico.
+\item Pintar ventanas y colocar cortinas que obstaculizan la luz natural y obligan a utilizar luz artificial.
+\end{itemize}
+
+En algunas prácticas es conocido por la mayoría que son causantes de desperdicio energético como: luminarias encendidas y sin uso en salones de clase vacíos; y en otras prácticas no es conocido por la comunidad universitaria que causan desperdicio de energía, como: comprar equipo electrónico barato y de alto consumo de electricidad, ya que, se demuestra con un análisis de costos de todo el ciclo de vida (este suma el precio inicial más los costos de consumo eléctrico durante toda la vida útil del producto) que comprando productos con eficiencia energética alta aunque el precio inicial sea mayor se termina pagando mucho menos en el largo plazo que comprando un producto barato e ineficiente, como en el caso de la luminaria LED.
+
+\textbf{Medida correctiva}
+
+La implementación de Cultura Energética en la UES-FMOcc tiene el objetivo de cambiar la forma de actividad humana en la universidad que favorece el desperdicio de electricidad, por otro tipo de actividad que utilice la electricidad de manera eficiente. Entonces se pretende un cambio en la cultura organizacional, algo muy difícil de lograr y que requiere el apoyo de toda la comunidad tanto en liderazgos formales como informales. La acción correctiva se enfoca a un cambio de hábitos, practicas, costumbres, información, conocimiento y mucho más que favorece el desperdicio de energía, y una de las formas de lograr el cambio es generando conciencia en función de costos-beneficios obtenidos. Utilizando el sentido estricto de la palabra “CONCIENCIA” es lo que se hace, a través de la ciencia (investigación científica) se demuestra que los costos, que su la mayoría no son económicos, sino, de voluntad de la comunidad son mucho menores que los beneficios o dicho de otra forma, el ahorro de energía  trae beneficios de magnitud exponencial que no son solo beneficios económicos sino medio-ambientales.
+
+\textbf{Estas medidas suponen la reducción del consumo energético a corto, mediano y largo plazo, logrando de esta manera obtener un sistema de energía más eficiente.}
+
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Bibliografía}
 \nocite{*}
 \bibliographystyle{apalike}
 \bibliography{SIIB}

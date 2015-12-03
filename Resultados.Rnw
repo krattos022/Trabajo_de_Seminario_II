@@ -1,0 +1,357 @@
+\chapter{Analisis de los Datos}
+Presentacion de los datos:
+
+\begin{table}[ht]
+\caption{Registros del consumo energetico en Kw/h} \label{Datos}
+\centering
+\begin{tabular}{lrrrrrrr}
+\hline
+  \hline
+  Meses/Años & 2009& 2010& 2011& 2012& 2013& 2014& 2015 \\ 
+  \hline
+Enero    &6299&	9652&	10921&	8788&	10922&	11786&	11024 \\
+    \hline
+Febrero    &18237&	20676&	22251&	18085&	20625&	19406&	18593 \\
+    \hline
+Marzo    &26416&	35408&	36067&	32867&	34239&	33325&	32106 \\
+    \hline
+Abril    &30059&	31546&	42266&	29160&	30327&	41981&	31394 \\
+    \hline
+Mayo    &37505&	41199&	29261&	34341&	37033&	29850&	41651 \\
+    \hline
+Junio    &39370&	42164&	38202&	35712&	38811&	38354&	41560 \\
+    \hline
+Julio    &35814&	33579&	16255&	29565&	33884&	35204&	35915 \\
+    \hline
+Agosto    &19151&	27229&	24435&	23470&	27635&	25858&	25756 \\
+    \hline
+Septiembre    &38658&	40030&	34671&	33122&	41097&38512	& \\
+    \hline
+Octubre  &38994&	37948&	31354&	35154&	40081&	41093& \\
+    \hline
+Noviembre  &38993&	38354&	28972&	33985&	39675&	38201& \\
+    \hline
+Diciembre    &36617&	34544&	30023&	31293&	35763&	34900& \\	
+
+\hline
+   \hline
+\end{tabular}
+\caption*{Fuente: \cite{ANelson}}
+\end{table}
+
+La tabla \ref{Datos} muestra la poblacion de registros del consumo electrico de la UES FMOcc desde enero de 2009 hasta agosto de 2015 en Kw/h,\footnote{Kilowatts por Hora} en una primera observación puede notarse como el cosumo para el mes de enero y diciembre varían mucho del resto, es decir, es lógico suponer que en los meses de vacaciones la UES FMOcc consuma menos cantidad de energía.
+\newpage
+Su representacion gráfica\footnote{Realizada con Gretl} como una serie de tiempo es la siguiete:
+
+\begin{figure}[htb]
+
+\centering
+\caption{Serie de tiempo de los datos del consumo enérgetico} 
+\includegraphics [width=0.8\textwidth]{Graf1}
+\caption*{Fuente: Propia} \label{Graf}
+
+\end{figure}
+
+Del gráfico \ref{Graf} puede notarse como el comportamiento del cosumo electrico pareciera ser ciclico o estacional, dado que se repite cada año, en palbras mas sencillas si se trazara una linea vertical en la marca de cada año (sobre el eje horizontal) podria observarse como se forma una especie de "M" en cada año denotando un patron estacional claro, Ademas la serie pareciera sser no estacionaria tanto en media como en varianza, para probar esto se hara uso de la prueba de Dickey Fuller Aumentada realizada con el sofware R.
+
+<<ADF.Test,fig=false>>=
+#cargando librerías necesarias
+library(tseries)
+library(xts)
+library(fUnitRoots)
+#cargando base de datos
+datosSII<-read.csv("SeriesDatosSII.csv", header = TRUE,sep = ",")
+#aplicando formato de serie temporal
+Base<- ts(datosSII$RPV, start = c(2009,1), end = c(2015,8), frequency = 12)
+#Test ADF con constante y tendencia
+ADF1<-adfTest(Base, lags = 11, type = "ct")
+#Test ADF con constante
+ADF2<-adfTest(Base, lags = 11, type = "c")
+@
+
+\begin{table}[ht]
+\caption{Test de Dickey Fuller Aumentado} \label{Test1}
+\centering
+\begin{tabular}{lr}
+\hline
+  \hline
+ \multicolumn{2}{|c|}{$H_0$: existencia de raíz unitaria: a = 1 }\\
+ \hline
+Tipo de contraste & P-valor\\ 
+ \hline
+Con constante & 0.7238\\
+ \hline
+Con constante y tendencia & 0.9414\\
+
+\hline
+   \hline
+\end{tabular}
+\caption*{Fuente: Propia}
+\end{table}
+
+De la tabla \ref{Test1} puede concluirse que la serie no es estacionaria ya que el P-valor de la prueba de ADF es mayor a 0.05 por lo que hay existencia de raiz unitaria y por lo tanto la serie es no estacionaria.
+
+\begin{figure}[htb]
+
+\centering
+\caption{Correlogramas FAC y FACP de los datos del consumo enérgetico} 
+\includegraphics [width=0.8\textwidth]{CX}
+\caption*{Fuente: Propia} \label{Graf2}
+
+\end{figure}
+
+El gráfico \ref{Graf2} desarrollado en Gretl, muestra tambien como la serie es no estacionaria dado que varios de los primeros retardos en FAC y FACP son significativamente diferentes de cero ademas puede notarse que los retardos 1, 12, 24, 36 y 48 para FAC poseen una correlacion significativamente diferente de cero lo que da la pauta para concluir que la serie analizada es estacional.
+
+\section{Estacionarización de los datos}
+
+Para estacionarizar los datos se hará uso de una diferencia estacional para estabilizar en media y reducir la estacionalidad y de la transformación de box-cox para estabilizar la varianza, este analisis se desarrollará en R.
+
+<<Estacionarizar,fig=false>>=
+#cargando librerías necesarias
+library(tseries)
+library(xts)
+library(TSA)
+#cargando base de datos
+datosSII<-read.csv("SeriesDatosSII.csv", header = TRUE,sep = ",")
+#aplicando formato de serie temporal
+Base<- ts(datosSII$RPV, start = c(2009,1), end = c(2015,8), frequency = 12)
+#buscando un lambda para la transdormació
+BoxCox.ar(datosSII$RPV)
+#Aplicando la diferecia estacional
+#con el retardo 12
+DFE<-diff(Base, lag = 12)
+@
+
+\begin{figure}[htb]
+
+\centering
+\caption{Test de Box-Cox para encontrar un Lambda Adecuado} 
+\includegraphics [width=0.4\textwidth]{BoxcoxPlot}
+\caption*{Fuente: Propia} \label{Graf3}
+
+\end{figure}
+\newpage
+Puede observarse en el gráfico \ref{Graf3} que la linea central de las tres lineas verticales punteadas estan cercanas a el valor de 1 por lo que la transformación de Boxcox sugiere que lambda sea igual a 1 con un 95\% de confianza, sin embargo que lambda sea igual a 1 indica que no es necesario aplicar una transformación a los datos.
+
+\begin{figure}[htb]
+
+\centering
+\caption{Serie estabilizada en media por una diferecia estacional} 
+\includegraphics [width=0.5\textwidth]{SerieDIFF}
+\caption*{Fuente: Propia} \label{Graf4}
+
+\end{figure}
+
+Del gráfico \ref{Graf4} puede observarse que la serie ha sido estabilizada en media y pareciera que también esta estabilizada en varianza aun sin hacer alguna transformación, sin embargo se realizará el Test de ADF para probar si la serie difereciada es estacionaria.
+
+\begin{table}[ht]
+\caption{Test de Dickey Fuller Aumentado} \label{Test2}
+\centering
+\begin{tabular}{lr}
+\hline
+  \hline
+ \multicolumn{2}{|c|}{$H_0$: existencia de raíz unitaria: a = 1 }\\
+ \hline
+Tipo de contraste & P-valor\\ 
+ \hline
+Con constante & 0.00339\\
+ \hline
+Con constante y tendencia & 0.01873\\
+
+\hline
+   \hline
+\end{tabular}
+\caption*{Fuente: Propia}
+\end{table}
+
+Puede observarse que segun la tabla \ref{Test2} el P-valor de la prueba ADF desarrollada en Gretl es menor que 0.05 por lo que hay evidencia estadistica pra rechazar $H_0$ por lo tanto la nueva serie es estacionaria con una diferencia estacional.
+
+\section{Selección del modelo}
+
+El modelo a utilizar sera un SARISMA para ecoger el valor de los retardo se hara uso de los correlogramas de la serie estacionarizada.
+
+\begin{figure}[htb]
+
+\centering
+\caption{Correlograma de la serie estacionaria} 
+\includegraphics [width=0.5\textwidth]{CEST}
+\caption*{Fuente: Propia} \label{Graf5}
+
+\end{figure}
+
+Puede observarse en el gráfico \ref{Graf5} que para la FAC el segundo retardo es considerablemente diferente de cero por lo que sugiere un modelo ARIMA(0,0,2) y con su componente estacional SARISMA(0,1,1)\footnote{En este caso D=1 por que fue difereciada estacionalmente una sola vez.}, al mismo tiempo el correlograma segun el FACP sugiere ARIMA(2,0,0) dado que el retardo 2 es considerablemente diferente de cero y su componente estacional un SARISMA(1,1,0), Entonces tenemos dos posibilidades un SARISMA(2,0,0)*(1,1,0) ó un SARISMA(0,0,2)*(0,1,1). se hara el ajuste de ambos modelos y se escogera el que sea mas significativo estadisticamente.
+
+\subsection{Ajuste del modelo SARISMA(2,0,0)*(1,1,0)\\ y SARISMA(0,0,2)*(0,1,1)}
+
+Al hacer el ajuste en Gretl pudo observarse lo siguiente:
+
+\textbf{Ajuste del modelo SARISMA(2,0,0)*(1,1,0)}
+
+\begin{center}
+\begin{table}[htb]
+\caption{Estadísticos de comparación}
+\begin{tabular}{lrlr}
+ \hline
+Media de la vble. dep. &  361.6471 & D.T. de la vble. dep. &  5589.167 \\
+ \hline
+media innovaciones &  39.44258 & D.T. innovaciones &  4746.117 \\
+ \hline
+Log-verosimilitud & $-$673.2666 & Criterio de Akaike &  1356.533 \\
+ \hline
+Criterio de Schwarz &  1367.631 & Hannan--Quinn &  1360.930 \\
+ \hline
+\end{tabular}
+\caption*{Fuente: Propia} \label{xDD}
+\end{table}
+\end{center}
+
+Puede observarse en la tabla \ref{xDD} que el AIC, y el HQC tienen un valor de 1356.533 y 1360.930
+respectivamente lo que servira de comparacion para el siguiente modelo.
+
+
+\textbf{Ajuste del modelo SARISMA(0,0,2)*(0,1,1)}
+
+\begin{center}
+
+\begin{table}[htb]
+\caption{Estadísticos de comparación}
+\begin{tabular}{lrlr}
+ \hline
+Media de la vble. dep. &  361.6471 & D.T. de la vble. dep. &  5589.167 \\
+ \hline
+media innovaciones & $-$153.5331 & D.T. innovaciones &  3649.986 \\
+ \hline
+Log-verosimilitud & $-$665.7208 & Criterio de Akaike &  1341.442 \\
+ \hline
+Criterio de Schwarz &  1352.539 & Hannan--Quinn &  1345.839 \\
+ \hline
+\end{tabular}
+\caption*{Fuente: Propia} \label{xDD2}
+\end{table}
+
+\end{center}
+
+Puede observarse en la tabla \ref{xDD} que el AIC, y el HQC tienen un valor de 1341.533 y 1345.930
+respectivamente lo que servira de comparacion para escoger el modelo.
+
+\textbf{Conclusíon}
+
+Dado que el AIC y el HQC son mas pequeños en el ajuste del modelo SARISMA(0,0,2)*(0,1,1) se selecionara éste para el analisis de los datos del consumo de energía.
+
+\section{Validación del modelo}
+
+En esta etapa se comprueba la normalidad de los resíduos del modelo y
+la incorrelación de los resíduos, si una de estas condiciones no se cumple es
+porque el modelo no es adecuado.
+
+\subsection{Incorrelación en los residuos}
+
+\begin{figure}[htb]
+
+\centering
+\caption{Correlograma de la serie estacionaria} 
+\includegraphics [width=0.5\textwidth]{Modelo}
+\caption*{Fuente: Propia} \label{Graf6}
+
+\end{figure}
+
+El gráfico \ref{Graf6} muestra que los resíduos del modelo SARISMA identificado
+son incorrelados, es decir, todos o la mayoría no se salen de las bandas rojas que representan el intervalo de confianza a un nivel de confianza el 95
+por ciento.
+
+\subsection{Normalidad en los residuos}
+
+\begin{figure}[htb]
+
+\centering
+\caption{Correlograma de la serie estacionaria} 
+\includegraphics [width=0.5\textwidth]{ModeloQQ}
+\caption*{Fuente: Propia} \label{Graf7}
+
+\end{figure}
+
+Para verificar la normalidad de los residuos se utiliza el estadístico Chi
+cuadrado con hipótesis nula: Existe normalidad, y el gráfico QQ (\ref{Graf7}) de los
+resíduos  el cual comprueba la existencia de normalidad si los puntos del
+gráfico de dispersión se ajustan muy bien a la recta con pendiente positiva y = x. El p valor de la prueba es igual a
+0,8828, como el p valor es mayor que el nivel de significancia de cinco por
+ciento entonces se acepta la hipótesis nula de que los resíduos del modelo son
+normales.
+
+\section{Proyecciones}
+
+
+\begin{figure}[htb]
+
+\centering
+\caption{Correlograma de la serie estacionaria} 
+\includegraphics [width=0.5\textwidth]{Proyecciones}
+\caption*{Fuente: Propia} \label{Graf8}
+
+\end{figure}
+
+\begin{center}
+ Para intervalos de confianza 95\%, $z(0.025) = 1.96$
+
+\end{center}
+
+\begin{center}
+\begin{table}[htb]
+\caption{Proyecciones del Modelo}
+\begin{longtable}{%
+r% col 1: obs
+  r@{.}l% col 2: actual
+    r@{.}l% col 3: fitted
+      r@{.}l% col 4: std error
+        r@{.}l% col 5: conf int lo
+         r@{.}l}% col 5: conf int hi
+Observaciones & \multicolumn{2}{c}{Consumo\_Mensual\_Energia}  & \multicolumn{2}{c}{predicción}
+  & \multicolumn{2}{c}{Desv. Típica}
+   & \multicolumn{4}{c}{Intervalo de 95\% } \\[1ex]
+     \hline
+ 2015:09  & \multicolumn{2}{c}{} & 39211&16 & 3649&986 & 32057&32 & 46365&00 \\
+  \hline
+ 2015:10  & \multicolumn{2}{c}{} & 37730&96 & 3689&022 & 30500&61 & 44961&31 \\
+  \hline
+ 2015:11  & \multicolumn{2}{c}{} & 37162&87 & 3842&656 & 29631&40 & 44694&34 \\
+  \hline
+ 2015:12  & \multicolumn{2}{c}{} & 34917&81 & 3842&656 & 27386&34 & 42449&28 \\
+  \hline
+ 2016:01  & \multicolumn{2}{c}{} & 11111&38 & 3842&656 & 3579&91 & 18642&85 \\
+  \hline
+ 2016:02  & \multicolumn{2}{c}{} & 21278&06 & 3842&656 & 13746&59 & 28809&52 \\
+  \hline
+ 2016:03  & \multicolumn{2}{c}{} & 34445&35 & 3842&656 & 26913&88 & 41976&82 \\
+  \hline
+ 2016:04  & \multicolumn{2}{c}{} & 35614&87 & 3842&656 & 28083&40 & 43146&34 \\
+  \hline
+ 2016:05  & \multicolumn{2}{c}{} & 36255&81 & 3842&656 & 28724&35 & 43787&28 \\
+  \hline
+ 2016:06  & \multicolumn{2}{c}{} & 40159&68 & 3842&656 & 32628&21 & 47691&15 \\
+  \hline
+ 2016:07  & \multicolumn{2}{c}{} & 32107&43 & 3842&656 & 24575&96 & 39638&89 \\
+  \hline
+ 2016:08  & \multicolumn{2}{c}{} & 26020&34 & 3842&656 & 18488&87 & 33551&80 \\
+  \hline
+ 2016:09  & \multicolumn{2}{c}{} & 39060&78 & 3842&656 & 31529&31 & 46592&25 \\
+  \hline
+ 2016:10  & \multicolumn{2}{c}{} & 38251&39 & 3842&656 & 30719&92 & 45782&86 \\
+  \hline
+ 2016:11  & \multicolumn{2}{c}{} & 37471&91 & 3842&656 & 29940&44 & 45003&38 \\
+  \hline
+ 2016:12  & \multicolumn{2}{c}{} & 35226&85 & 3842&656 & 27695&38 & 42758&32 \\
+  \hline
+ 2017:01  & \multicolumn{2}{c}{} & 11420&42 & 3842&656 & 3888&95 & 18951&89 \\
+  \hline
+ 2017:02  & \multicolumn{2}{c}{} & 21587&10 & 3842&656 & 14055&63 & 29118&56 \\
+  \hline
+\end{longtable}
+\caption*{Fuente: Propia}\label{xDDD}
+\end{table}
+\end{center}
+
+
+
+Puede observarse en el gráfico \ref{Graf8} las proyeciones realizadas por el modelo y como éste se ajusta considerablemente bien a los datos originales, ademas en la tabla \ref{xDDD} puen observarse las proyeciones de energía que sera consumida en los proximos 18 meses junto con sus intervalos de confianza.
+
+

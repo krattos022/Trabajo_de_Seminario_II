@@ -1,0 +1,106 @@
+\chapter*{Conclusiones}
+\addcontentsline{toc}{chapter}{Conclusiones}
+En Respuesta a las Hipotesis y preguntas de Investigación:
+\begin{enumerate}
+  \item Para la Hipotesis 1. No hay suficiente evidencia para rechazar la hipotesis nula por lo que se concluye que NO hay eficiencia enérgetica en los edificios de la UES FMOcc.
+  \item Para la Hipotesis 2. Hay suficiente evidencia para rechazar la Hipotesis nula por lo que dada las proyecciones realizadas pudo determinarse que el consumo energetico es estable a través del tiempo, sin embargo puede llegar a reducirse.
+  \item Para la Hipotesis 3. No hay suficiente evidencia para rechazar la hipotesis nula por lo que se concluye que el periodo de tiempo donde mas energía se consume es el los ciclos activos en la UES FMOcc.
+  \item Si es posible alcanzar la eficiencia energetica a través de las propuestas de \cite{ANelson} que sugieren la reduccion del consumo energetico y su costo.
+  \item La cantidad de energía Ahorrada dependera de la correcta aplicacion de las propuestas de \cite{ANelson} y podria llegar a ahorrase hasta un 30\%- 60\% en un largo plazo de 18 meses.
+\end{enumerate}
+
+En respuesta a los Objetivos:
+
+\begin{enumerate}
+  \item Si se logro desarrollar las proyecciones del consumo energetico a través de una serie temporal
+  \item El periodo de tiempo donde se consume mayor cantidad de energía según los datos y las proyeciones analizadas es en los meses de Febrero, Marzo, Abril, Mayo, Junio, Septiembre, Octubre, Noviembre y donde es mas bajo el consumo en Enero, Julio, Agosto y Diciembre.
+  \item Este objetivo sera respondido gracias al trabajo de \cite{ANelson} de la siguiente manera.
+\end{enumerate}
+
+\section*{Medidas Correctivas}
+
+\addcontentsline{toc}{chapter}{Medidas Correctivas}
+
+Algunas de las medidas consideradas en este trabajo gracias a \cite{ANelson} son las siguientes:
+
+\textbf{Problema 1.}
+
+\textbf{Descripción:}
+
+El sistema de climatización de la Facultad Multidisciplinaria de Occidente consta de demasiadas unidades de aire acondicionado con baja capacidad de refrigeración (capacidad máxima de 5 Toneladas de Refrigeración (TR)), esto causa el inconveniente que deban emplazarse muchas unidades para satisfacer la demanda térmica de un edificio, como el caso del edificio de Carreras Múltiples donde hay 20 aires acondicionados emplazados para una capacidad instalada de 75 TR, donde pudo emplazarse tres unidades de 25 TR. El problema es el consumo de energía eléctrica excesivo en 20 aires acondicionados comparado con el consumo de tres o cuatro unidades que sumen la misma capacidad de 75 TR; entonces, cuando se tenga que sustituir el sistema de climatización debe evaluarse la alternativa de emplazar una sola unidad que suministre la demanda térmica completa del edificio y que proporcione menor consumo de energía.
+Además se aumentan los costos de mantenimiento, ya que, se tiene que intervenir correctiva y preventivamente a las 20 unidades realizando sustitución de piezas y partes como condensadores, compresores, también recargar el fluido refrigerante, revisar sistema eléctrico, entre otras intervenciones a varias de las unidades al mismo tiempo, en cambio si se tiene solo una unidad exterior de aire acondicionado el mantenimiento preventivo y correctivo será exclusivo para ésta ahorrando incluso recurso humano.
+El tener una sola unidad exterior no quiere decir, que si se encuentra está en funcionamiento, todas las oficinas estarán climatizadas aunque estén vacías, ya que, este tipo de aires acondicionados de gran capacidad permiten instalar varias unidades interiores cada una de las cuales se controla individualmente permitiendo tener oficinas con el aire acondicionado apagado, incluso oficinas a diferentes temperaturas.
+
+\textbf{Medida correctiva}
+
+Consiste en sustituir los aires acondicionados de baja capacidad de refrigeración instalados en los edificios por una unidad climatizadora individual que cubra la misma demanda térmica que los equipos sustituidos. La acción está pensada primeramente para disminuir el consumo de electricidad que provoca el tener demasiadas unidades de aire acondicionados instaladas; la nueva unidad climatizadora además de proporcionar la misma capacidad de refrigeración tiene un consumo menor de electricidad como consecuencia principal de que solo se tendrá un compresor demandando potencia de funcionamiento a diferencia de tener 20 compresores demandando potencia en el caso los 20 aires acondicionados del edificio de Carreras Múltiples. Además se mejorará la gestión del mantenimiento de este sistema.
+
+\textbf{Problema 2.}
+
+\textbf{Descripción.}
+
+Las oficinas y laboratorios que cuentan con aire acondicionado instalado no tienen sistema de renovación de aire que produce el inconveniente de disminuir la calidad de éste, la causa principal es la concentración de di-óxido de carbono que aumenta progresivamente debido a la transpiración de las personas que se encuentran dentro de la oficina. Instalar un sistema de renovación de aire representa un aumento en la demanda térmica del sistema de climatización, con el correspondiente aumento del consumo en electricidad, sin embargo, es mucho menor que la carga por transmisión, por equipo, por personas y por radiación, pero, lo importante es garantizar la salubridad del aire que las personas respiran cuando se encuentran dentro de las oficinas.
+
+El aire debe de renovarse por lo menos cada hora, sin embargo, el sistema de renovación de aire renovará el aire por lo menos cada hora mientras el aire acondicionado esté en funcionamiento.
+
+Los inconvenientes que causa el no contar con sistema de renovación de aire en las oficinas y laboratorios son los siguientes:
+
+\begin{itemize}
+
+ \item Disminución de la calidad del aire debido por las concentraciones de di-óxido de carbono.
+	 \item Aumento de la probabilidad de enfermedades producto de aire contaminado.
+
+\end{itemize}
+
+El no contar con sistema de renovación de aire tiene beneficios desde el punto de vista del consumo como los siguientes:
+
+\begin{itemize}
+
+  \item Disminución de la demanda térmica de las oficinas y laboratorios
+  \item Disminución de los costos de la factura eléctrica que se paga a la empresa distribuidora
+
+\end{itemize}
+
+Esta disminución es pequeña, además, no se puede disminuir el consumo de electricidad a costa de la salud y seguridad de las personas y por eso el sistema de renovación de aire es necesario.
+
+\textbf{Medida correctiva}
+
+Consiste en instalar dos ventiladores en la oficina o laboratorio, un primer ventilador que extraiga el aire contaminado del interior del espacio climatizado y un segundo ventilador que introduzca aire salubre del exterior al interior de la oficina. Los sistemas industriales se instalan en el techo de los edificios, sin embargo, el edificio debe contar con un sistemas de ductos de ventilación que conduzcan el aire renovado y contaminado que actualmente no se tiene, esto con el motivo de renovar el aire de todas las oficinas y laboratorios con un solo sistema. También se puede instalar un sistema individual en cada oficina o laboratorio simplemente con dos ventiladores pequeños.
+Hay lugares donde no es estrictamente necesario el sistema de renovación de aire, en especial aquellos donde se concentran menos de cinco personas; una solución práctica sería que estas personas tuvieran la responsabilidad de renovar el aire abriendo las ventanas cuando se da el descanso por motivo de almuerzo de 12:00 a 2:00 pm, cerrándolas al terminar el descanso, sería un hábito que mejoraría las condiciones de salubridad del aire. Ahora, los lugares donde es necesario instalar el sistema de renovación son los que tiene altas concentraciones de personas, como salas de exposiciones y conferencias, centros de cómputo, laboratorios  y salones de clase. Entonces en estos se instalará el sistema.
+
+\textbf{Problema 3.}
+
+\textbf{Descripción}
+
+Según la investigación realizada en la Facultad se percibe que uno de las problemáticas más comunes que se presentan, es la falta de sectorización de algunos de los circuitos de luminarias internas de edificios tanto de oficinas administrativas como de áreas comunes como aulas, y con esto se tiene una fuga de energía eléctrica desperdiciada cada vez que son utilizadas las luminarias.
+
+\textbf{Medida Correctiva}
+
+La sectorización por áreas y zonas, es la acción correctiva consiste en realizar el ordenamiento en los circuitos de las luminarias internas que presentan un patrón que no está bien definido o que presentan características que no van de acuerdo al tipo de actividad de se realiza en el lugar. Se presentan dos de los patrones que deberán ser usados en los espacios de donde a color rojo se tienen las secciones de los circuitos como deben ser controlados por un mismo apagador y con esto iluminar zonas independientes de otras.
+
+Patrón 01: Para este corresponde la figura  donde el patrón de los circuitos esta dado como bloques paralelos a la pizarra, donde este está enfocado a aquellas aulas que presentan un nivel de iluminación aproximadamente igual en todos sus puntos y que la iluminación natural no provoca mayor incidencia en los niveles de iluminación del área.
+
+Patrón 02: En este caso la sectorización está dada por con un patrón mixto donde se tienen bloques paralelos a la pizarra de los circuitos controlados por apagadores independientes, pero sumado a esto se tiene una sección que es paralela a las ventanas del aula en cuestión donde puede verse en la figura. Este patrón de conexión de los circuitos de las luminarias es con el fin aprovechar la luz natural proveniente de las ventanas.
+
+Patrón 03: Se propone un tercer caso en donde a criterio de las condiciones que se presentan en el áreas deber ser establecido el orden de los circuitos como es el caso de laboratorios y oficinas, pues en función de las exigencias que se necesitan lumínicamente, así deberá ordenarse donde no hay un patrón establecido.
+
+\textbf{Problema 4.}
+
+\textbf{Descripción }
+
+Se pueden plantear acciones de eficiencia energética bien estructuradas en innovación tecnológica (equipo electrónico de menor consumo), domótica (control automatizado de equipos electrónicos), entre muchas otras que pretendan disminuir el consumo de energía sin tomar en cuenta las práctica humanas; y aun así, tener desperdicio de electricidad debido a las actividades de los seres humanos que favorecen el uso ineficiente de la energía. El problema es, que la comunidad universitaria ejecuta prácticas y tiene hábitos en el uso de equipo eléctrico-electrónico que incurren en desperdicio de energía, se citan unos ejemplos:
+
+\begin{itemize}
+\item No apagar iluminación en salones de clase vacíos y áreas de trabajo.
+\item Ajustar aires acondicionados con temperaturas diferentes de la temperatura de confort.
+\item Comprar equipos electrónicos baratos y de alto consumo eléctrico.
+\item Pintar ventanas y colocar cortinas que obstaculizan la luz natural y obligan a utilizar luz artificial.
+\end{itemize}
+
+En algunas prácticas es conocido por la mayoría que son causantes de desperdicio energético como: luminarias encendidas y sin uso en salones de clase vacíos; y en otras prácticas no es conocido por la comunidad universitaria que causan desperdicio de energía, como: comprar equipo electrónico barato y de alto consumo de electricidad, ya que, se demuestra con un análisis de costos de todo el ciclo de vida (este suma el precio inicial más los costos de consumo eléctrico durante toda la vida útil del producto) que comprando productos con eficiencia energética alta aunque el precio inicial sea mayor se termina pagando mucho menos en el largo plazo que comprando un producto barato e ineficiente, como en el caso de la luminaria LED.
+
+\textbf{Medida correctiva}
+
+La implementación de Cultura Energética en la UES-FMOcc tiene el objetivo de cambiar la forma de actividad humana en la universidad que favorece el desperdicio de electricidad, por otro tipo de actividad que utilice la electricidad de manera eficiente. Entonces se pretende un cambio en la cultura organizacional, algo muy difícil de lograr y que requiere el apoyo de toda la comunidad tanto en liderazgos formales como informales. La acción correctiva se enfoca a un cambio de hábitos, practicas, costumbres, información, conocimiento y mucho más que favorece el desperdicio de energía, y una de las formas de lograr el cambio es generando conciencia en función de costos-beneficios obtenidos. Utilizando el sentido estricto de la palabra “CONCIENCIA” es lo que se hace, a través de la ciencia (investigación científica) se demuestra que los costos, que su la mayoría no son económicos, sino, de voluntad de la comunidad son mucho menores que los beneficios o dicho de otra forma, el ahorro de energía  trae beneficios de magnitud exponencial que no son solo beneficios económicos sino medio-ambientales.
+
+\textbf{Estas medidas suponen la reducción del consumo energético a corto, mediano y largo plazo, logrando de esta manera obtener un sistema de energía más eficiente.}

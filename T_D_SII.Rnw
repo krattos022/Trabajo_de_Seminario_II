@@ -48,8 +48,12 @@
 \SweaveInput{Introduccion.Rnw}
 \SweaveInput{PdelPro.Rnw}
 \SweaveInput{AbordajeT.Rnw}
+\SweaveInput{Metodologia.Rnw}
+\SweaveInput{Resultados.Rnw}
+\SweaveInput{Conclusiones.Rnw}
 
-
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Bibliografía}
 \nocite{*}
 \bibliographystyle{apalike}
 \bibliography{SIIB}
